@@ -1,0 +1,195 @@
+{
+  "categories" : [ {
+    "id" : 0,
+    "title" : "main"
+  }, {
+    "id" : 1,
+    "title" : "Mundo"
+  }, {
+    "id" : 2,
+    "title" : "Tecnología"
+  }, {
+    "id" : 3,
+    "title" : "Educación"
+  }, {
+    "id" : 4,
+    "title" : "Opinión"
+  }, {
+    "id" : 5,
+    "title" : "carrousel"
+  } ],
+  "news" : [ {
+    "author" : {
+      "name" : "DIANA LUQUE LAVADO",
+      "picture" : "dianaluque.png",
+      "user" : "@photosynthetica"
+    },
+    "body" : "<p>Nuestro ingeniero había expresado su deseo de estudiar en Stanford y encontró la manera de hacerlo gratis gracias a los cursos virtuales de tecnología y emprendimiento. Ahora el Massachusetts Institute of Technology (MIT) anunció su primer curso totalmente en línea a partir de marzo, según lo reporta BBC News.</p><p>Este primer proyecto en línea, el cual es un curso de circuitos y electrónica, fue bautizado como MITx diseñado como un prototipo que busca romper las barreras de la educación, por medio de un sistema automatizado que al final del curso hará que los estudiantes más exitosos reciban un certificado.</p><p>MIT ofrece desde hace un tiempo varios cursos en línea. La diferencia, además de ser gratuito, es abierto para cualquier estudiante del mundo sin requisitos de ingreso. Todo será por medio de su plataforma, los materiales de estudio, junto con un laboratorio virtual y libros digitales o e-books para consulta.</p><p>El curso de circuitos y electrónica comenzará el próximo lunes, y está basado en el que el campus ofrece presencial con el mismo nombre. MIT asegura que no es una versión ligera del mismo sino que tendrá todos los componentes e incluye ejercicios interactivos para comprobar los conocimientos de los estudiantes.</p><p>El profesor Anant Agarwal, director del laboratorio de computación e inteligencia artificial de MIT, aclara que no existirán requisitos como titulaciones para tomar el curso, pero aconseja tener conocimientos en matemáticas, ciencias e inglés para quienes este no es su idioma nativo, y asumir un código de honor en el que los estudiantes se comprometan a un comportamiento honesto.</p><p>Este primer curso es la prueba para los siguientes que MIT desea abrir en áreas como biología, física y matemáticas, como una forma de formar y acreditar personas para generar empleo. La universidad busca también llamar la atención de los empleadores y posibles interesados en financiación a futuro.</p><p>Existirá diferenciación entre un titulo obtenido de manera presencial y uno virtual, así como el material de estudio pero la idea con MITx es llegar a un grupo de estudiantes internacional y también entrar en la competición de ofertas educativas, no solo la de Stanford, sino también con lo que iTunes U ofrece en cuanto a lecturas.</p><p>Se pueden inscribir en el sitio web de MITx, en el que encontrarán un enlace que ‘enlistar’ o ‘enroll’ para este curso. De seguro se volverán a encontrar con nuestro ingeniero en la sala de estudio virtual.</p>",
+    "brief" : "Ya no será necesario ir hasta el campus de MIT para estudiar allá, por medio de su curso gratuito en línea cualquiera podrá hacerlo.",
+    "categories" : [ 0, 3 ],
+    "img" : "news-0.png",
+    "published-date" : "22.06.17 12:26 pm",
+    "title" : "MIT BUSCA ESTUDIANTES DE TODO EL MUNDO QUE QUIERAN ESTUDIAR GRATIS",
+    "type" : "1"
+  }, {
+    "categories" : [ 0, 2 ],
+    "img" : "news-1.png",
+    "title" : "El método de la Universidad de Stanford para mejorar las calificaciones",
+    "type" : "2"
+  }, {
+    "categories" : [ 0 ],
+    "img" : "news-2.png",
+    "title" : "Estas son las mejores tech startups del mundo",
+    "type" : "3"
+  }, {
+    "categories" : [ 0, 3 ],
+    "img" : "news-3.png",
+    "title" : "Voluntarios por la educación, la combinación perfecta",
+    "type" : "3"
+  }, {
+    "categories" : [ 1 ],
+    "img" : "news-4.png",
+    "title" : "Titulo noticia laboratoria",
+    "type" : "3"
+  }, {
+    "categories" : [ 1 ],
+    "img" : "news-5.png",
+    "title" : "Titulo noticia laboratoria",
+    "type" : "4"
+  }, {
+    "categories" : [ 1 ],
+    "img" : "news-6.png",
+    "title" : "Titulo noticia laboratoria",
+    "type" : "4"
+  }, {
+    "categories" : [ 1 ],
+    "img" : "news-7.png",
+    "title" : "Titulo noticia laboratoria",
+    "type" : "3"
+  }, {
+    "categories" : [ 1 ],
+    "img" : "news-8.png",
+    "title" : "Titulo noticia laboratoria newspaper",
+    "type" : "5"
+  }, {
+    "categories" : [ 1 ],
+    "img" : "news-9.png",
+    "title" : "Titulo noticia laboratoria newspaper",
+    "type" : "5"
+  }, {
+    "categories" : [ 1 ],
+    "img" : "news-10.png",
+    "title" : "Titulo noticia laboratoria",
+    "type" : "4"
+  }, {
+    "categories" : [ 1 ],
+    "img" : "news-11.png",
+    "title" : "Titulo noticia laboratoria",
+    "type" : "4"
+  }, {
+    "categories" : [ 1 ],
+    "img" : "news-12.png",
+    "title" : "Titulo noticia laboratoria",
+    "type" : "4"
+  }, {
+    "categories" : [ 1 ],
+    "img" : "news-13.png",
+    "title" : "Titulo noticia laboratoria",
+    "type" : "4"
+  }, {
+    "categories" : [ 2 ],
+    "img" : "news-14.png",
+    "title" : "El método de la Universidad de Standford para mejorar las calificaciones",
+    "type" : "2"
+  }, {
+    "categories" : [ 2 ],
+    "img" : "news-15.png",
+    "title" : "Título noticia Laboratoria",
+    "type" : "4"
+  }, {
+    "categories" : [ 2 ],
+    "img" : "news-16.png",
+    "title" : "Título noticia Laboratoria",
+    "type" : "4"
+  }, {
+    "categories" : [ 2 ],
+    "img" : "news-17.png",
+    "title" : "Título noticia laboratoria newspaper",
+    "type" : "5"
+  }, {
+    "categories" : [ 2 ],
+    "img" : "news-18.png",
+    "title" : "Título noticia laboratoria newspaper",
+    "type" : "5"
+  }, {
+    "categories" : [ 3 ],
+    "img" : "news-19.png",
+    "title" : "Titulo noticia laboratoria",
+    "type" : "4"
+  }, {
+    "categories" : [ 3 ],
+    "img" : "news-20.png",
+    "title" : "Titulo noticia laboratoria",
+    "type" : "4"
+  }, {
+    "categories" : [ 3 ],
+    "img" : "news-21.png",
+    "title" : "Titulo noticia laboratoria",
+    "type" : "4"
+  }, {
+    "categories" : [ 3 ],
+    "img" : "news-22.png",
+    "title" : "Titulo noticia laboratoria",
+    "type" : "4"
+  }, {
+    "categories" : [ 3 ],
+    "img" : "news-23.png",
+    "title" : "Titulo noticia laboratoria",
+    "type" : "5"
+  }, {
+    "categories" : [ 3 ],
+    "img" : "news-24.png",
+    "title" : "Titulo noticia laboratoria",
+    "type" : "5"
+  }, {
+    "categories" : [ 4 ],
+    "img" : "news-25.png",
+    "title" : "Titulo noticia laboratoria",
+    "type" : "2"
+  }, {
+    "categories" : [ 4 ],
+    "img" : "news-26.png",
+    "title" : "Titulo noticia laboratoria",
+    "type" : "2"
+  }, {
+    "categories" : [ 4 ],
+    "img" : "news-27.png",
+    "title" : "Titulo noticia laboratoria",
+    "type" : "2"
+  }, {
+    "categories" : [ 4 ],
+    "img" : "news-28.png",
+    "title" : "Titulo noticia laboratoria",
+    "type" : "2"
+  }, {
+    "categories" : [ 2, 5 ],
+    "img" : "news-29.png",
+    "title" : "Titulo noticia laboratoria",
+    "type" : "4"
+  }, {
+    "categories" : [ 3, 5 ],
+    "img" : "news-30.png",
+    "title" : "Titulo noticia laboratoria",
+    "type" : "4"
+  }, {
+    "categories" : [ 4, 5 ],
+    "img" : "news-31.png",
+    "title" : "Titulo noticia laboratoria",
+    "type" : "4"
+  }, {
+    "categories" : [ 2, 5 ],
+    "img" : "news-32.png",
+    "title" : "Titulo noticia laboratoria",
+    "type" : "4"
+  } ]
+}
