@@ -3,3 +3,24 @@
   padding: 0;
   box-sizing: border-box;;
 }
+
+section {
+  padding: 0 30px;
+}
+.new{
+  height: 80vh;
+  padding: 0;
+  position: relative;
+    &__small{
+      height: 208px;
+    }
+    &__imgNew{
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+
+      &--small {
+        background: green;
+      }
+    }
+}
