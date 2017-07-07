@@ -7,11 +7,13 @@ section {
   padding: 0 30px; }
 
 .new {
-  height: 80vh;
+  height: 500px;
   padding: 0;
   position: relative; }
   .new__small {
-    height: 208px; }
+    height: 250px; }
+  .new__smallXS {
+    height: 125px; }
   .new__imgNew {
     width: 100%;
     height: 100%;
