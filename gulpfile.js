@@ -20,6 +20,7 @@ const paths = {
     utils: "js/utils/**.js",
     sass: "scss/**/*.scss",
     mainSass: "scss/style.scss",
+		img: "img/*.png",
     mainJs: "js/index.js"
 };
 
@@ -29,6 +30,7 @@ const sources = {
     html: config.source + paths.html,
     sass: paths.assets + paths.sass,
     js: paths.assets + paths.js,
+		img: paths.assets + paths.img,
     components: config.source + paths.assets + paths.components,
     utils: config.source + paths.assets + paths.utils,
     rootSass: config.source + paths.assets + paths.mainSass,
@@ -54,4 +56,8 @@ gulp.task('js', () => {
         .pipe(concat('index.js'))
         .pipe(browserify())
         .pipe(gulp.dest(config.dist + paths.assets + "js"))
+});
+gulp.task('img', ()=>{
+	gulp.src(config.source+sources.img)
+	.pipe(gulp.dest(config.dist+paths.assets+"img"))
 });
