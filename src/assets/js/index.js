@@ -4,6 +4,7 @@ const render = (root) => {
     root.empty();
     root.append(Principal());
     root.append(Mundo());
+        root.append(Tecnologia());
 };
 
 const laboratoriaNews = {
