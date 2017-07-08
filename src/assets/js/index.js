@@ -2,28 +2,40 @@
 
 const render = (root) => {
     root.empty();
-    root.append(Header());
-    root.append(Dashboard());
+    root.append(Principal());
+    //root.append(Dashboard());
 };
 
-const state = {
+const laboratoriaNews = {
   news : null,
   idNew : null,
   category:null ,
   idCategory:null
-};
+}
 
 
-$(_ => {
+$( _ => {
 
-  getJSON('http://localhost:3000/api/news/', (err, json) => {
-    if (err) {
-        return alert(err.message);
-    }
-    state.news = json;
-    console.log(state.news[0].title);
-    const root = $('.root');
-  //  render(root);
+  getJSON('/api/news/', (err, json) => {
+  laboratoriaNews.news = json;
+  console.log(laboratoriaNews.news);
+  const root = $('.root');
+  render(root);
+  });
+
+  getJSON('/api/categories/', (err, json) => {
+  laboratoriaNews.category = json;
+  console.log(  laboratoriaNews.category);
+  });
+
+  getJSON('/api/categories/'+laboratoriaNews.idCategory, (err, json) => {
+  laboratoriaNews.idCategory = json;
+  console.log(laboratoriaNews.idCategories);
+  });
+
+  getJSON('/api/news/' + laboratoriaNews.idNew, (err, json) => {
+    laboratoriaNews.idNew = json;
+    console.log(laboratoriaNews.idNew);
   });
 
 });
