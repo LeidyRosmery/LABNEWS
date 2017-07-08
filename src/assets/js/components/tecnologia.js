@@ -34,14 +34,14 @@ tecnologia.append(tituloSeccion);
     subCol2.append(text2);
 
     const subCol3=$('<div class="col-lg-12  col-md-12 col-sm-12 col-xs-12  new new__smallXS">');
-    const img3=$('<img class="new__imgNew new__imgNew--small" src="assets/img/'+laboratoriaNews.news[17].img+'" alt="">');
+    const img3=$('<img class="new__imgNewXS new__imgNew--small" src="assets/img/'+laboratoriaNews.news[17].img+'" alt="">');
     const text3=$('<h3> </h3>');
     col2.append(subCol3);
     subCol3.append(img3);
     subCol3.append(text3);
 
     const subCol4=$('<div class="col-lg-12  col-md-12 col-sm-12 col-xs-12  new new__smallXS">');
-    const img4=$('<img class="new__imgNew new__imgNew--small" src="assets/img/'+laboratoriaNews.news[18].img+'" alt="">');
+    const img4=$('<img class="new__imgNewXS new__imgNew--small" src="assets/img/'+laboratoriaNews.news[18].img+'" alt="">');
     const text4=$('<h3> </h3>');
     col2.append(subCol4);
     subCol4.append(img4);

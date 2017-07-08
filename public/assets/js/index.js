@@ -5,7 +5,7 @@
     const container= $('<div class="container-fluid ">');
     const row=$("<div class='row noticia'>");
     const divImg1=$("<div class='col-lg-12 col-md-12 col-xs-12 col-sm-12 new'>");
-    const img1=$('<img class="new__imgNew" src="assets/img/'+laboratoriaNews.news[0].img+'" alt="">');
+    const img1=$('<img class="new__imgNewLG" src="assets/img/'+laboratoriaNews.news[0].img+'" alt="">');
     const text1=$('<h3> </h3>');
     principal.append(container)
     container.append(row);
@@ -17,27 +17,34 @@
     const divImg2=$('<div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 new">');
     const img2=$('<img class="new__imgNew" src="assets/img/'+laboratoriaNews.news[1].img+'">');
     const text2=$('  <h3> </h3>');
+    const divText2=$('<div class="col-lg-6 col-md-6 col-xs-12 col-sm-12 new__textLG">');
     container.append(row2);
     row2.append(divImg2)
     divImg2.append(img2);
-    divImg2.append(text2);
+    divImg2.append(divText2);
+    divText2.append(text2);
 
 
     const divImg3=$('<div class="col-lg-3 col-md-3 col-xs-12 col-sm-12 new">');
     const img3=$('<img class="new__imgNew" src="assets/img/'+laboratoriaNews.news[2].img+'" alt="">');
     const text3=$('  <h3> </h3>');
+    const divText3=$('<div class="col-lg-3 col-md-3 col-xs-12 col-sm-12 new__textLG">');
 
     row2.append(divImg3)
     divImg3.append(img3);
-    divImg3.append(text3);
+    divImg3.append(divText3);
+    divText3.append(text3);
 
     const divImg4=$('<div class="col-lg-3 col-md-3 col-xs-12 col-sm-12 new" >');
     const img4=$('<img class="new__imgNew" src="assets/img/'+laboratoriaNews.news[3].img+'" alt="">');
     const text4=$('  <h3> </h3>');
+    const divText4=$('<div class="col-lg-3 col-md-3 col-xs-12 col-sm-12 new__textLG" >');
 
     row2.append(divImg4)
     divImg4.append(img4);
-    divImg4.append(text4);
+
+    divImg4.append(divText4);
+      divText4.append(text4);
 
    return principal;
  }
@@ -113,7 +120,7 @@ educacion.append(tituloSeccion);
    subCol2.append(texto2);
 
    const subCol3=$('  <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12  new new__smallXS">');
-   const img3=$('<img class="new__imgNew new__imgNew--small" src="assets/img/'+laboratoriaNews.news[21].img+'" alt="">');
+   const img3=$('<img class="new__imgNewXS new__imgNew--small" src="assets/img/'+laboratoriaNews.news[23].img+'" alt="">');
    const texto3=$('<h3> </h3>');
    col1.append(subCol3);
    subCol3.append(img3);
@@ -124,21 +131,21 @@ educacion.append(tituloSeccion);
    const col2=$('<div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 new">');
    row.append(col2);
    const subCol4=$('  <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 new new__small">');
-   const img4=$('<img class="new__imgNew new__imgNew--small" src="assets/img/'+laboratoriaNews.news[22].img+'" alt="">');
+   const img4=$('<img class="new__imgNew new__imgNew--small" src="assets/img/'+laboratoriaNews.news[21].img+'" alt="">');
    const texto4=$('<h3> </h3>');
    col2.append(subCol4);
    subCol4.append(img4);
    subCol4.append(texto4);
 
    const subCol5=$('  <div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 new new__small">');
-   const img5=$(' <img class="new__imgNew new__imgNew--small" src="assets/img/'+laboratoriaNews.news[23].img+'" alt="">');
+   const img5=$(' <img class="new__imgNew new__imgNew--small" src="assets/img/'+laboratoriaNews.news[22].img+'" alt="">');
    const texto5=$('<h3> </h3>');
    col2.append(subCol5);
    subCol5.append(img5);
    subCol5.append(texto5);
 
    const subCol6=$('<div class="col-lg-12  col-md-12  col-sm-12 col-xs-12 new new__smallXS">');
-   const img6=$('<img class="new__imgNew new__imgNew--small" src="assets/img/'+laboratoriaNews.news[24].img+'" alt="">');
+   const img6=$('<img class="new__imgNewXS new__imgNew--small" src="assets/img/'+laboratoriaNews.news[24].img+'" alt="">');
    const texto6=$('<h3> </h3>');
    col2.append(subCol6);
    subCol6.append(img6);
@@ -186,14 +193,14 @@ tecnologia.append(tituloSeccion);
     subCol2.append(text2);
 
     const subCol3=$('<div class="col-lg-12  col-md-12 col-sm-12 col-xs-12  new new__smallXS">');
-    const img3=$('<img class="new__imgNew new__imgNew--small" src="assets/img/'+laboratoriaNews.news[17].img+'" alt="">');
+    const img3=$('<img class="new__imgNewXS new__imgNew--small" src="assets/img/'+laboratoriaNews.news[17].img+'" alt="">');
     const text3=$('<h3> </h3>');
     col2.append(subCol3);
     subCol3.append(img3);
     subCol3.append(text3);
 
     const subCol4=$('<div class="col-lg-12  col-md-12 col-sm-12 col-xs-12  new new__smallXS">');
-    const img4=$('<img class="new__imgNew new__imgNew--small" src="assets/img/'+laboratoriaNews.news[18].img+'" alt="">');
+    const img4=$('<img class="new__imgNewXS new__imgNew--small" src="assets/img/'+laboratoriaNews.news[18].img+'" alt="">');
     const text4=$('<h3> </h3>');
     col2.append(subCol4);
     subCol4.append(img4);
@@ -240,14 +247,14 @@ tecnologia.append(tituloSeccion);
     subCol2.append(text2);
 
      const subCol3=$('<div class="col-lg-12  col-xl-12  col-sm-12 col-xs-12 new new__smallXS">');
-    const img3=$('<img class="new__imgNew new__imgNew--small" src="assets/img/'+laboratoriaNews.news[8].img+'" alt="">');
+    const img3=$('<img class="new__imgNewXS new__imgNew--small" src="assets/img/'+laboratoriaNews.news[8].img+'" alt="">');
     const text3=$('<h3> </h3>');
     col2.append(subCol3);
     subCol3.append(img3);
     subCol3.append(text3);
 
     const subCol4=$(' <div class="col-lg-12  col-xl-12  col-sm-12 col-xs-12 new new__smallXS">');
-    const img4=$('<img class="new__imgNew new__imgNew--small" src="assets/img/'+laboratoriaNews.news[9].img+'" alt="">');
+    const img4=$('<img class="new__imgNewXS new__imgNew--small" src="assets/img/'+laboratoriaNews.news[9].img+'" alt="">');
     const text4=$('<h3> </h3>');
     col2.append(subCol4);
     subCol4.append(img4);
