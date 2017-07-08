@@ -3,7 +3,7 @@
 const render = (root) => {
     root.empty();
     root.append(Principal());
-    //root.append(Dashboard());
+    root.append(Mundo());
 };
 
 const laboratoriaNews = {
