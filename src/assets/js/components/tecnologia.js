@@ -1,11 +1,12 @@
 'use strict';
  const Tecnologia = () => {
    const tecnologia = $('<section class="tecnologia">');
-   const tituloSeccion=$('  <h3> mundo</h3>');
+   const tituloSeccion=$('  <h3> Tecnologia</h3>');
    const container= $('<div class="container-fluid ">');
    const row=$("<div class='row noticia'>");
+tecnologia.append(tituloSeccion);
    tecnologia.append(container)
-   tecnologia.append(tituloSeccion);
+
    container.append(row);
 
    const col1=$('<div class="col-lg-6  col-xmd-6 col-sm-12 col-xs-12 new">');

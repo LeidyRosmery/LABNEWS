@@ -1,6 +1,6 @@
 'use strict';
  const Mundo = () => {
-    const mundo = $('<section class="principal">');
+    const mundo = $('<section class="mundo">');
     const tituloSeccion=$('  <h3> mundo</h3>');
     const container= $('<div class="container-fluid ">');
     const row1=$("<div class='row noticia'>");
@@ -8,8 +8,9 @@
     const col1=$('<div class="col-lg-3  col-md-3  col-xs-12 col-sm-12 new">');
     const img15=$('<img class="new__imgNew" src="assets/img/'+laboratoriaNews.news[0].img+'" alt="">');
     const text15=$('<h3> </h3>');
+  mundo.append(tituloSeccion);
     mundo.append(container)
-    mundo.append(tituloSeccion);
+
     container.append(row1);
     row1.append(col1)
     col1.append(img15);
