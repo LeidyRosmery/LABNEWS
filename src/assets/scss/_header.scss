@@ -1,0 +1,51 @@
+/***************************header************************/
+.navbar-default {
+    background: $brand-color;
+
+    .navbar-collapse {
+        .navbar-nav {
+            width: 100%;
+        }
+
+        .item-nav {
+            color: $accent-color;
+            background: $brand-color;
+        }
+    }
+
+    .navbar-header {
+        background: $accent-color;
+        border-bottom: $brand-color 0.15em solid;
+
+        .navbar-toggle {
+            border: none;
+        }
+
+        .icon-bar {
+            background-color: $brand-color;
+        }
+    }
+}
+
+.menu {
+    color: $base-color;
+    display: flex;
+    font-size: 1.2em;
+    justify-content: space-between;
+
+    &--item {
+        border-bottom: $secondary-color 0.05em;
+    }
+
+    &--option {
+        padding: 1em 0.8em;
+    }
+}
+@media (min-width: 768px) {
+    .navbar-default .navbar-collapse {
+        .navbar-nav {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
