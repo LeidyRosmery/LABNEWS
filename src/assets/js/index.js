@@ -8,6 +8,8 @@ const render = (root) => {
     root.append(Tecnologia());
     root.append(Educacion());
     root.append(Opinion());
+    root.append(Footer());
+    
 };
 
 const laboratoriaNews = {

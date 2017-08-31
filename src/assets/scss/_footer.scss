@@ -1,0 +1,28 @@
+.pie-pag {
+    color: $accent-color;
+    background: $brand-color;
+    padding: 2em 0;
+
+    &--icon {
+        color: $accent-color;
+        padding: 0 0.5em;
+    }
+
+    &--item {
+        padding: 1em 4em;
+
+        &__bf {
+            border-right: solid 0.12em #fff;
+            border-left: solid 0.12em #fff;
+        }
+    }
+
+    &--text {
+        margin: 0;
+        font-size: 1em;
+
+        &__pd {
+            padding-top: 1em;
+        }
+    }
+}

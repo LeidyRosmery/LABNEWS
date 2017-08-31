@@ -4,8 +4,8 @@
   .navbar-default .navbar-collapse .navbar-nav {
     width: 100%; }
   .navbar-default .navbar-collapse .item-nav {
-    color: #fff;
-    background: #F7B617; }
+    background: #F7B617;
+    color: #fff; }
   .navbar-default .navbar-header {
     background: #fff;
     border-bottom: #F7B617 0.15em solid; }
@@ -28,11 +28,35 @@
   .navbar-default .navbar-collapse .navbar-nav {
     display: flex;
     justify-content: space-between; } }
+.pie-pag {
+  color: #fff;
+  background: #F7B617;
+  padding: 2em 0; }
+  .pie-pag--icon {
+    color: #fff;
+    padding: 0 0.5em; }
+  .pie-pag--item {
+    padding: 1em 4em; }
+    .pie-pag--item__bf {
+      border-right: solid 0.12em #fff;
+      border-left: solid 0.12em #fff; }
+  .pie-pag--text {
+    margin: 0;
+    font-size: 1em; }
+    .pie-pag--text__pd {
+      padding-top: 1em; }
+
 * {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box; }
+
+.pdx2 {
+  padding-bottom: 2.5em; }
+
+.pdx3 {
+  padding-bottom: 3.5em; }
 
 section {
   padding: 0 30px; }
