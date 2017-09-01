@@ -1,96 +1,114 @@
 'use strict';
- const Mundo = () => {
-    const mundo = $('<section class="mundo">');
-    const tituloSeccion=$('  <h3> mundo</h3>');
-    const container= $('<div class="container-fluid ">');
-    const row1=$("<div class='row noticia'>");
+const Mundo = () => {
+    const mundo = $('<section class="mundo padBoth">');
+    const tituloSeccion = $('  <h3> mundo</h3>');
+    const container = $('<div class="container-fluid ">');
+    const row1 = $("<div class='row'>");
+    const itemMundo1 = $('<div class="pd col-lg-3  col-md-3  col-xs-12 col-sm-12">');
+    const imgMundo1 = $('<img class="news news--img__lg img-responsive" src="assets/img/' + laboratoriaNews.news[4].img + '" alt="">');
+    const divTextMundo1 = $('<div class="news--detail col-lg-3  col-md-3  col-xs-12 col-sm-12 " >');
+    const textMundo1 = $('  <p>' + laboratoriaNews.news[4].title + '</p>');
 
-    const col1=$('<div class="col-lg-3  col-md-3  col-xs-12 col-sm-12 new">');
-    const img15=$('<img class="new__imgNew" src="assets/img/'+laboratoriaNews.news[4].img+'" alt="">');
-    const text15=$('<h3> </h3>');
-  mundo.append(tituloSeccion);
-    mundo.append(container)
-
+    mundo.append(tituloSeccion);
+    mundo.append(container);
     container.append(row1);
-    row1.append(col1)
-    col1.append(img15);
-    col1.append(text15);
+    row1.append(itemMundo1)
+    itemMundo1.append(imgMundo1);
+    itemMundo1.append(divTextMundo1);
+    divTextMundo1.append(textMundo1)
 
-    const col2=$('<div class="col-lg-6 col-md-6  col-sm-12 col-xs-12  new ">');
-
-    const subCol1=$('<div class="col-lg-6  col-md-6 col-sm-12 col-xs-12 new new__small">');
-    const img1=$('<img class="new__imgNew new__imgNew--small" src="assets/img/'+laboratoriaNews.news[5].img+'" alt="">');
-    const text1=$('<h3> </h3>');
-    row1.append(col2)
-    col2.append(subCol1);
-    subCol1.append(img1);
-    subCol1.append(text1);
-
-
-    const subCol2=$('<div class="col-lg-6  col-xl-6 hidden-xs hidden-sm new new new__small">');
-    const img2=$('<img class="new__imgNew new__imgNew--small" src="assets/img/'+laboratoriaNews.news[6].img+'" alt="">');
-    const text2=$('<h3> </h3>');
-    col2.append(subCol2);
-    subCol2.append(img2);
-    subCol2.append(text2);
-
-     const subCol3=$('<div class="col-lg-12  col-xl-12  col-sm-12 col-xs-12 new new__smallXS">');
-    const img3=$('<img class="new__imgNewXS new__imgNew--small" src="assets/img/'+laboratoriaNews.news[8].img+'" alt="">');
-    const text3=$('<h3> </h3>');
-    col2.append(subCol3);
-    subCol3.append(img3);
-    subCol3.append(text3);
-
-    const subCol4=$(' <div class="col-lg-12  col-xl-12  col-sm-12 col-xs-12 new new__smallXS">');
-    const img4=$('<img class="new__imgNewXS new__imgNew--small" src="assets/img/'+laboratoriaNews.news[9].img+'" alt="">');
-    const text4=$('<h3> </h3>');
-    col2.append(subCol4);
-    subCol4.append(img4);
-    subCol4.append(text4);
+    const itemMundo2 = $('<div class=" col-lg-6 col-md-6  col-sm-12 col-xs-12 ">');
+    const rowSubItem1=$('<div class="row "></div>');
+    const subItem = $('<div class="pd col-lg-6  col-md-6 col-sm-12 col-xs-12">');
+    const imgSubItem = $('<img class="news--img__md img-responsive" src="assets/img/' + laboratoriaNews.news[5].img + '" alt="">');
+    const divTextSubItem = $('<div class="news news--detail col-lg-6 col-md-6  col-sm-12 col-xs-12 ">');
+    const textSubItem = $('  <p>' + laboratoriaNews.news[5].title + '</p>');
+    row1.append(itemMundo2)
+    itemMundo2.append(rowSubItem1);
+    rowSubItem1.append(subItem);
+    subItem.append(imgSubItem);
+    subItem.append(divTextSubItem);
+    divTextSubItem.append(textSubItem);
 
 
-    const col3=$('<div class="col-lg-3 col-md-3  hidden-xs hidden-sm new">');
+    const subItem1 = $('<div class="pd col-lg-6  col-xl-6 hidden-xs hidden-sm ">');
+    const imgSubItem1 = $('<img class="news news--img__md img-responsive" src="assets/img/' + laboratoriaNews.news[6].img + '" alt="">');
+    const divTextSubItem1 = $('<div  class="news--detail col-lg-6  col-xl-6 hidden-xs hidden-sm ">');
+    const textSubItem1 = $('  <p>' + laboratoriaNews.news[6].title + '</p>');
+    rowSubItem1.append(subItem1);
+    subItem1.append(imgSubItem1);
+    subItem1.append(divTextSubItem1);
+    divTextSubItem1.append(textSubItem1);
 
-    const img5=$('<img class="new__imgNew"  src="assets/img/'+laboratoriaNews.news[7].img+'" alt="">');
-    const text5=$('<h3> </h3>');
-    row1.append(col3)
-    col3.append(img5);
-    col3.append(text5);
+
+    const rowSubItem2=$('<div class="row"></div>');
+    const subItem2 = $('<div class="pd col-lg-12  col-xl-12  col-sm-12 col-xs-12 pd">');
+    const imgSubItem2 = $('<img class="news news--img__sm img-responsive" src="assets/img/' + laboratoriaNews.news[8].img + '" alt="">');
+    const divTextSubItem2 = $('<div class="news--detail news--detail__sm  col-lg-12  col-xl-12  col-sm-12 col-xs-12">');
+    const textSubItem2 = $('  <p>' + laboratoriaNews.news[8].title + '</p>');
+    itemMundo2.append(rowSubItem2);
+    rowSubItem2.append(subItem2);
+    subItem2.append(imgSubItem2);
+    subItem2.append(divTextSubItem2);
+    divTextSubItem2.append(textSubItem2);
+
+    const subItem3 = $('<div class="pd col-lg-12  col-xl-12  col-sm-12 col-xs-12 ">');
+    const imgSubItem3 = $('<img class="news news--img__sm img-responsive" src="assets/img/' + laboratoriaNews.news[9].img + '" alt="">');
+    const divTextSubItem3 = $('<div class="news--detail news--detail__sm  col-lg-12  col-xl-12  col-sm-12 col-xs-12">');
+    const textSubItem3 = $('  <p>' + laboratoriaNews.news[9].title + '</p>');
+    rowSubItem2.append(subItem3);
+    subItem3.append(imgSubItem3);
+    subItem3.append(divTextSubItem3);
+    divTextSubItem3.append(textSubItem3);
+
+    const itemMundo3 = $('<div class="pd col-lg-3 col-md-3  hidden-xs hidden-sm ">');
+    const imgMundo3 = $('<img class="news news--img__lg img-responsive" src="assets/img/' + laboratoriaNews.news[7].img + '" alt="">');
+    const divTextMundo3 = $('<div class="news--detail col-lg-3 col-md-3  hidden-xs hidden-sm ">');
+    const textMundo3 = $('<p>' + laboratoriaNews.news[7].title + '</p>');
+    row1.append(itemMundo3)
+    itemMundo3.append(imgMundo3);
+    itemMundo3.append(divTextMundo3);
+    divTextMundo3.append(textMundo3);
 
 
 
-    const row2=$('<div class="row hidden-xs hidden-sm">');
-
+    const row2 = $('<div class="row hidden-xs hidden-sm">');
     container.append(row2);
-    const col4=$(' <div class="col-lg-3 new new__small">');
-    const img7=$('<img class="new__imgNew" src="assets/img/'+laboratoriaNews.news[10].img+'" alt="">');
-    const text7=$('<h3> </h3>');
-    row2.append(col4)
-    col4.append(img7);
-    col4.append(text7);
+    const itemMundo4 = $('<div class="pd col-lg-3">');
+    const imgMundo4 = $('<img class="news news--img__md img-responsive" src="assets/img/' + laboratoriaNews.news[10].img + '" alt="">');
+    const divTextMundo4 = $('<div class="news--detail col-lg-3">');
+    const textMundo4 = $('<p>' + laboratoriaNews.news[10].title + '</p>');
+    row2.append(itemMundo4)
+    itemMundo4.append(imgMundo4);
+    itemMundo4.append(divTextMundo4);
+    divTextMundo4.append(textMundo4);
 
-    const col5=$(' <div class="col-lg-3 new new__small">');
-    const img8=$('<img class="new__imgNew" src="assets/img/'+laboratoriaNews.news[11].img+'" alt="">');
-    const text8=$('<h3> </h3>');
-    row2.append(col5)
-    col5.append(img8);
-    col5.append(text8);
+    const itemMundo5 = $('<div class="pd col-lg-3">');
+    const imgMundo5 = $('<img class="news news--img__md img-responsive" src="assets/img/' + laboratoriaNews.news[11].img + '" alt="">');
+    const divTextMundo5 = $('<div class="news--detail col-lg-3">');
+    const textMundo5 = $('<p>' + laboratoriaNews.news[11].title + '</p>');
+    row2.append(itemMundo5)
+    itemMundo5.append(imgMundo5);
+    itemMundo5.append(divTextMundo5);
+    divTextMundo5.append(textMundo5);
 
-    const col6=$(' <div class="col-lg-3 new new__small">');
-    const img9=$('<img class="new__imgNew" src="assets/img/'+laboratoriaNews.news[12].img+'" alt="">');
-    const text9=$('<h3> </h3>');
-    row2.append(col6)
-    col6.append(img9);
-    col6.append(text9);
+    const itemMundo6 = $('<div class="pd col-lg-3">');
+    const imgMundo6 = $('<img class="news  news--img__md img-responsive" src="assets/img/' + laboratoriaNews.news[12].img + '" alt="">');
+    const divTextMundo6 = $('<div class="news--detail col-lg-3">');
+    const textMundo6 = $('<p>' + laboratoriaNews.news[12].title + '</p>');
+    row2.append(itemMundo6);
+    itemMundo6.append(imgMundo6);
+    itemMundo6.append(divTextMundo6);
+    divTextMundo6.append(textMundo6);
 
-    const col7=$(' <div class="col-lg-3 new new__small">');
-    const img10=$('<img class="new__imgNew" src="assets/img/'+laboratoriaNews.news[13].img+'" alt="">');
-    const text10=$('<h3> </h3>');
-    row2.append(col7)
-    col7.append(img10);
-    col7.append(text10);
+    const itemMundo7 = $('<div class="pd col-lg-3">');
+    const imgMundo7 = $('<img class="news news--img__md img-responsive" src="assets/img/' + laboratoriaNews.news[13].img + '" alt="">');
+    const divTextMundo7 = $('<div class="news--detail col-lg-3">');
+    const textMundo7 = $('<p>' + laboratoriaNews.news[13].title + '</p>');
+    row2.append(itemMundo7);
+    itemMundo7.append(imgMundo7);
+    itemMundo7.append(divTextMundo7);
+    divTextMundo7.append(textMundo7);
 
-
-
-   return mundo;
- }
+    return mundo;
+}

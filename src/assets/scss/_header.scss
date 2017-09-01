@@ -1,10 +1,13 @@
 /***************************header************************/
 .navbar-default {
-    background: $brand-color;
+    background: $accent-color;
+    border: none;
+    margin: 0;
 
     .navbar-collapse {
         .navbar-nav {
             width: 100%;
+            background: $brand-color;
         }
 
         .item-nav {
@@ -30,7 +33,7 @@
 .menu {
     color: $base-color;
     display: flex;
-    font-size: 1.2em;
+    font-size: 1.06em;
     justify-content: space-between;
 
     &--item {

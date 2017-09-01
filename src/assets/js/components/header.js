@@ -1,14 +1,14 @@
 'use strict'
 const Header = () => {
     const header = $('<header class="header"></header>');
-    const menuLab = $('<div class="menu hidden-xs"></div>');
+    const menuLab = $('<div class="menu hidden-xs padBoth"></div>');
     const itemLeft=$('<div class="menu menu--item"></div>');
     const optionItem1=$('<div class="menu--option"></div>');
     const imgOption1=$('<img src="assets/img/menu.png" alt="">');
-    const textOption1=$('<span>SECTION</span> ');
+    const textOption1=$('<span> SECTION</span> ');
     const optionItem2=$('<div class="menu--option"></div>');
     const imgOption2=$('<img src="assets/img/search.png" alt="">');
-    const textOption2=$('<span>SEARCH</span> ');
+    const textOption2=$('<span> SEARCH</span> ');
     header.append(menuLab);
     menuLab.append(itemLeft);
     itemLeft.append(optionItem1);
@@ -54,7 +54,7 @@ const Header = () => {
     infDetail.append(temperature);
     contLogo.append(salto3);
 
-    const navLabNews = $('<nav class="navbar navbar-default "></nav>');
+    const navLabNews = $('<nav class="navbar navbar-default padBoth"></nav>');
     const navHeader = $('<div class="navbar-header visible-xs"></div>');
     const btnBurger = $('<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navegacion" name="button"></button>');
     const lineBurger1 = $('<span class="icon-bar" ></span>');
@@ -94,22 +94,3 @@ const Header = () => {
     return header;
 
 }
-// 'use strict';
-// const Header = () => {
-//   const header = $('<header class="header"></header>');
-//   const row = $('<div class="row"></div>');
-//   const topHeader = $('<div class="col-xs-12 header__top"></div>');
-//   const logo = $('<div id="logo" class="col-sm-1 text-center"><a href="index.html"><img width="35" src="assets/img/pinterest-logo.png" alt="Pinterest" title="Pinterest" /></a></div>');
-//   const search = $('<div class="col-sm-9 header__top--buscar"><i class="glyphicon glyphicon-search"></i><input type="text" placeholder="Buscar"></div>');
-//   const icons = $('<div class="col-sm-2 text-center"><img width="34" src="assets/img/icon-arrow.png" /><img width="34" src="assets/img/icon-profile.png" /><img width="34" src="assets/img/message.png" /></div>');
-//   const belowHeader = $('<div class="col-xs-12 header__below"><div class ="col-xs-5"><i class="glyphicon glyphicon-share header__below--icon"></i></div><div class="col-xs-2"></div><div class="col-xs-5"><button class="header__below--seguir">Seguir tablero</button></div></div>');
-//
-//   topHeader.append(logo);
-//   topHeader.append(search);
-//   topHeader.append(icons);
-//   row.append(topHeader);
-//   row.append(belowHeader);
-//   header.append(row);
-//
-//   return header;
-// }

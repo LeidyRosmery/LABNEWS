@@ -1,8 +1,8 @@
 'use strict'
 const Footer=()=> {
-    const piePagina = $('<footer class=""></footer>');
-    const contenPiePag= $('<div class="container-fluid pie-pag"></div>');
-    const itemPie1 = $('<div class="text-left col-lg-4 col-xs-12 pie-pag--item"></div>');
+    const piePagina = $('<footer class="padBoth"></footer>');
+    const contenPiePag= $('<div class="container-fluid pie-pag "></div>');
+    const itemPie1 = $('<div class=" col-lg-4 col-xs-12 pie-pag--item"></div>');
     const logoPie = $('  <img class="pdx2" src="assets/img/logo-footer.png" alt="Laboratoria"></div>');
     const textItem1 = $('  <p class="pie-pag--text">Editado por Laboratoria</p><p class="pie-pag--text">Av. Jose Pardo #601 Lima 1 Peru</p><p class="pie-pag--text">Copyright Laboratoria.la</p><p class="pie-pag--text">Todos lo derechos reservados</p><hr class="visible-xs"><p class="visible-xs text-center">Ver mas</p>');
     const itemPie2 = $('<div class="col-lg-4 hidden-xs pie-pag--item pie-pag--item__bf ">');
@@ -27,6 +27,7 @@ const Footer=()=> {
                         '<i class="pie-pag--icon fa fa-facebook fa-2x" aria-hidden="true"></i>'+
                         '<i class="pie-pag--icon fa fa-twitter fa-2x" aria-hidden="true"></i>'+
                         '<i class="pie-pag--icon fa fa-linkedin fa-2x" aria-hidden="true"></i>');
+
     piePagina.append(contenPiePag);
     contenPiePag.append(itemPie1);
     itemPie1.append(logoPie);

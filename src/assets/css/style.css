@@ -28,6 +28,23 @@
   .navbar-default .navbar-collapse .navbar-nav {
     display: flex;
     justify-content: space-between; } }
+.slider {
+  border: 2px #F7B617 solid;
+  padding: 1.5em 2em; }
+  .slider--itemCarousel {
+    padding: 0 0.4em;
+    left: 0; }
+  .slider--iconSlider {
+    background: #F7B617; }
+
+.controlSlider {
+  width: 0;
+  opacity: 1; }
+  .controlSlider__left {
+    left: -0.6em !important; }
+  .controlSlider__right {
+    left: 0; }
+
 .pie-pag {
   color: #fff;
   background: #F7B617;
