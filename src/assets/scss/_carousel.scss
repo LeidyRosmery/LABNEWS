@@ -1,24 +1,30 @@
-.slider {
-  border: 2px $brand-color solid;
-  padding: 1.5em 2em;
+.carousel.padBoth {
+    padding: 2vh 2.5vw;
+}
 
-    &--itemCarousel{
-      padding: 0 0.4em;
-      left: 0;
+.slider {
+    border: 2px $brand-color solid;
+    padding: 1.5em 2em;
+
+    &--itemCarousel {
+        padding: 0 0.4em;
+        left: 0;
     }
-    &--iconSlider{
-      background: $brand-color;
+
+    &--iconSlider {
+        background: $brand-color;
     }
 }
 
-
 .controlSlider {
-  width: 0;
-  opacity: 1;
-  &__left{
-    left: -0.6em !important;
-  }
-  &__right{
-    left: 0;
-  }
+    width: 0;
+    opacity: 1;
+
+    &__left {
+        left: 0.3em !important;
+    }
+
+    &__right {
+        left: -1em ;
+    }
 }

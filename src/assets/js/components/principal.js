@@ -21,11 +21,11 @@ const Principal = () => {
     const row2 = $('<div class="row ">');
     const divImg2 = $('<div class="pd col-lg-6 col-md-6 col-xs-12 col-sm-12 ">');
     const img2 = $('<img class="news news--img__lg  img--md img-responsive" src="assets/img/' + laboratoriaNews.news[1].img + '">');
-    const divText2 = $('<div class="news--detail col-lg-6 col-md-6 col-xs-12 col-sm-12 ">');
+    const divText2 = $('<div class="news--detail detail--md col-lg-6 col-md-6 col-xs-12 col-sm-12 ">');
     const text2 = $('  <p class="news--titleLetter"> ' + changeColor(laboratoriaNews.news[1].title , 4,8)+ '</p>');
     //console.log('que pasa'+laboratoriaNews.news[1].title.split(" "));
 
-    const letter1 = $('<span class="news--letter">HOY</span>');
+    const letter1 = $('<span class="news--letter letter--md">HOY</span>');
 
     container.append(row2);
     row2.append(divImg2)

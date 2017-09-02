@@ -9,11 +9,11 @@ const Tecnologia = () => {
     row.append(tituloSeccion);
 
     const itemTecnologia = $('<div class="pd col-lg-6  col-xmd-6 col-sm-12 col-xs-12 ">');
-    const imgPlay = $('<img class="news--play news--play__sm" src="assets/img/play-button.png" alt="">');
+    const imgPlay = $('<img class=" news--play news--play__sm play--lg" src="assets/img/play-button.png" alt="">');
     const imgTecnologia = $('<img class="news news--img__lg img--md img-responsive" src="assets/img/' + laboratoriaNews.news[14].img + '" alt="">');
-    const divTextTecnologia = $('<div class="news--detail col-lg-3  col-md-3  col-xs-12 col-sm-12 " >');
+    const divTextTecnologia = $('<div class="news--detail detail--md col-lg-3  col-md-3  col-xs-12 col-sm-12 " >');
     const textTecnologia = $('  <p class="news--titleLetter">' + changeColor(laboratoriaNews.news[14].title , 0,3)  + '</p>');
-    const letter = $('<span class="news--letter">HOY</span>');
+    const letter = $('<span class="news--letter news--letter__md letter--md">HOY</span>');
     row.append(itemTecnologia)
     itemTecnologia.append(imgTecnologia);
     itemTecnologia.append(imgPlay);

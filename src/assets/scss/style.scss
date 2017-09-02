@@ -84,7 +84,8 @@ $separator-row: 1.5vh;
         position: absolute;
 
         &__sm {
-            bottom: 31em;
+            bottom: 30em;
+            left: 38em;
         }
 
         &__md {
@@ -102,6 +103,10 @@ $separator-row: 1.5vh;
         padding: 0.3em 1em;
         position: relative;
         bottom: 5.5vh;
+
+        &__md {
+            bottom: 3vh;
+        }
     }
 
     &--titleLetter {
@@ -130,24 +135,85 @@ $separator-row: 1.5vh;
     }
 }
 @media (max-width: 767px) {
-    .img--sm {
-        height: $small-height;
-        position: absolute;
-        width: 50%;
+    .news--detail {
+        height: 17vh;
     }
 
-    .detail--sm {
-        position: relative;
-        width: 50%;
-        font-size: 1em;
-        left: 50%;
+    .img {
+        &--sm {
+            height: 17vh;
+            position: absolute;
+            width: 40%;
+        }
+
+        &--md {
+            height: ($small-height*2)+$separator-row;
+        }
+
+        &--lg {
+            height: ($small-height*3)+($separator-row*3);
+        }
     }
 
-    .img--md {
-        height: ($small-height*2)+$separator-row;
+    .titleLetter {
+        &--sm {
+            position: relative;
+            bottom: 1em;
+        }
     }
 
-    .img--lg {
-        height: ($small-height*3)+($separator-row*3);
+    .detail {
+        &--sm {
+            position: relative;
+            width: 60%;
+            padding-left: 2em;
+            font-size: 1em;
+            left: 40%;
+        }
+
+        &--md {
+            font-size: 1.1em;
+        }
+    }
+
+    .letter {
+        &--md {
+            padding: 0.3em 1em;
+            font-size: 1.2em;
+            bottom: 0.5em;
+        }
+
+        &--sm {
+            right: 4.5em;
+            top: 4.8em;
+        }
+    }
+
+    .play {
+        &--sm {
+            top: 1.5em;
+            left: 5em;
+            width: 3em;
+        }
+
+        &--md {
+            bottom: 13em;
+            width: 4.5em;
+            left: 16em;
+        }
+
+        &--lg {
+            left: 15.5em;
+            top: 1em;
+        }
+    }
+
+    .slider {
+        padding: 0;
+        border: none;
+    }
+
+    .carousel.padBoth {
+        padding: 2vh 0.5vw;
     }
 }

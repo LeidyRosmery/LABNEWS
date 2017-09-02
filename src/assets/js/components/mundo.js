@@ -5,7 +5,7 @@ const Mundo = () => {
     const row1 = $("<div class='row'>");
     const tituloSeccion = $(' <div class="pd col-lg-12 col-md-12 col-xs-12 "><h3 class="category--title"> MUNDO</h3><hr class="category--underline"></div> ');
     const itemMundo1 = $('<div class="pd col-lg-3  col-md-3  col-xs-12 col-sm-12">');
-    const imgPlay = $('<img class="news--play news--play__lg" src="assets/img/play-button.png" alt="">');
+    const imgPlay = $('<img class="news--play news--play__lg play--md" src="assets/img/play-button.png" alt="">');
     const imgMundo1 = $('<img class="news news--img__lg img-responsive img--md" src="assets/img/' + laboratoriaNews.news[4].img + '" alt="">');
     const divTextMundo1 = $('<div class="news--detail col-lg-3  col-md-3  col-xs-12 col-sm-12 " >');
     const textMundo1 = $('  <p class="news--titleLetter">' + changeColor(laboratoriaNews.news[4].title , 0,2) + '</p>');
