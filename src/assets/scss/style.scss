@@ -216,4 +216,16 @@ $separator-row: 1.5vh;
     .carousel.padBoth {
         padding: 2vh 0.5vw;
     }
+
+    .newsInf {
+        bottom: 1.5em;
+        padding: 0 1.5em;
+        color: #fff;
+        left: 0;
+        position: absolute;
+    }
+
+    .title-news {
+        font-size: 17px;
+    }
 }
