@@ -4,7 +4,7 @@ $base-color: #2B2B2B;
 $accent-color: #fff;
 $secondary-color: #d6d4d4;
 $small-height: 15vh;
-$separator-row:1.5vh;
+$separator-row: 1.5vh;
 @import "header";
 @import "carousel";
 @import "footer";
@@ -17,7 +17,7 @@ $separator-row:1.5vh;
 }
 
 .pd {
-    padding-bottom: $separator-row;
+    padding: 0 1vh $separator-row;
 }
 
 .pdx2 {
@@ -44,21 +44,73 @@ $separator-row:1.5vh;
     }
 }
 
+.category {
+    &--title {
+        margin-bottom: 0;
+        font-size: 1.5em;
+    }
+
+    &--underline {
+        width: 22px;
+        margin: 0;
+        background: #F7B617;
+        padding: 0.3vh 1vw;
+    }
+}
+
 .news {
-  width: 100%;
+    width: 100%;
 
     &--detail {
         width: 100%;
         height: $small-height;
         color: $accent-color;
+        font-size: 1.3em;
         background: $base-color;
-        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column-reverse;
 
         &__sm {
             position: relative;
             width: 60%;
             left: 40%;
         }
+    }
+
+    &--play {
+        left: 16em;
+        position: absolute;
+
+        &__sm {
+            bottom: 31em;
+        }
+
+        &__md {
+            bottom: 34vh;
+        }
+
+        &__lg {
+            bottom: 68vh;
+        }
+    }
+
+    &--letter {
+        color: $base-color;
+        background: $brand-color;
+        padding: 0.3em 1em;
+        position: relative;
+        bottom: 5.5vh;
+    }
+
+    &--titleLetter {
+        position: relative;
+        bottom: 1em;
+    }
+
+    &--highlight {
+        color: $brand-color;
     }
 
     &--img {
@@ -75,5 +127,27 @@ $separator-row:1.5vh;
         &__lg {
             height: ($small-height*4)+($separator-row*3);
         }
+    }
+}
+@media (max-width: 767px) {
+    .img--sm {
+        height: $small-height;
+        position: absolute;
+        width: 50%;
+    }
+
+    .detail--sm {
+        position: relative;
+        width: 50%;
+        font-size: 1em;
+        left: 50%;
+    }
+
+    .img--md {
+        height: ($small-height*2)+$separator-row;
+    }
+
+    .img--lg {
+        height: ($small-height*3)+($separator-row*3);
     }
 }

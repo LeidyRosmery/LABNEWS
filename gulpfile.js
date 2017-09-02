@@ -54,7 +54,7 @@ gulp.task('sass', () => {
 
 
 gulp.task('js', () => {
-    gulp.src(["./src/assets/js/components/principal.js","./src/assets/js/components/opinion.js","./src/assets/js/components/educacion.js","./src/assets/js/components/tecnologia.js", "./src/assets/js/components/mundo.js", "./src/assets/js/components/header.js", "./src/assets/js/utils/get-json.js","./src/assets/js/components/footer.js", "./src/assets/js/index.js"])
+    gulp.src(["./src/assets/js/components/principal.js","./src/assets/js/components/opinion.js","./src/assets/js/components/educacion.js","./src/assets/js/components/tecnologia.js", "./src/assets/js/components/mundo.js", "./src/assets/js/components/header.js", "./src/assets/js/utils/utilities.js", "./src/assets/js/utils/get-json.js","./src/assets/js/components/footer.js", "./src/assets/js/index.js"])
         .pipe(concat('index.js'))
         .pipe(browserify())
         .pipe(gulp.dest(config.dist + paths.assets + "js"))

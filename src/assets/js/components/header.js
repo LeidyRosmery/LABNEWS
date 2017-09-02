@@ -61,7 +61,7 @@ const Header = () => {
     const lineBurger2 = $('<span class="icon-bar" ></span>');
     const lineBurger3 = $('<span class="icon-bar" ></span>');
     const logoLab = $('<img class="navbar-brand" alt="Laboratoria" src="assets/img/logoicon.png">');
-    const navCollapse = $('<div class="collapse navbar-collapse" id="navegacion"></div>');
+    const navCollapse = $('<div class="collapse navbar-collapse pd" id="navegacion"></div>');
     const navLista = $('<ul class="nav navbar-nav" role="tablist"></ul>');
     const itemLista1 = $('<li><a href="#" class="item-nav active">Lo último</a></li>');
     const itemLista2 = $('<li><a href="#" class="item-nav ">Opinión</a></li>');

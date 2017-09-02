@@ -22,6 +22,8 @@ const laboratoriaNews = {
 
 $(_ => {
 
+
+
     getJSON('/api/news/', (err, json) => {
         laboratoriaNews.news = json;
         console.log(laboratoriaNews.news);

@@ -26,7 +26,8 @@ const Footer=()=> {
                         '<span class=""> SIGUENOS</span>'+
                         '<i class="pie-pag--icon fa fa-facebook fa-2x" aria-hidden="true"></i>'+
                         '<i class="pie-pag--icon fa fa-twitter fa-2x" aria-hidden="true"></i>'+
-                        '<i class="pie-pag--icon fa fa-linkedin fa-2x" aria-hidden="true"></i>');
+                        '<i class="pie-pag--icon fa fa-linkedin fa-2x" aria-hidden="true"></i>'+
+                         '<a class="hidden-xs pie-pag--bntUp" href="#principal"><img class="imgUp" src="assets/img/flecha3.png" alt="">SUBIR</a>');
 
     piePagina.append(contenPiePag);
     contenPiePag.append(itemPie1);
