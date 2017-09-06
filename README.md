@@ -45,20 +45,24 @@ __***Tecnologia***__
 - La seccion Tecnologia forma otra estructura en la version desktop.
 ![Tecnologia](vistas/tecnologia.png)
 
-__***Mundo y Tecnologia (responsive)***__
+__***Mundo y Tecnologia - responsive***__
 - Las secciones Mundo y Tecnologia en version responsive.
 ![mundo-mobil](vistas/mundo-mobil.png) | ![tecnologia-mobil](vistas/tecnologia-mobil.png)
 
 __***Educacion***__
+- La seccion Educacion forma otra estructura en la version desktop.
 ![Educacion](vistas/educacion.png)
 
 __***Opinion***__
+- La seccion Opinion forma otra estructura en la version desktop.
 ![Opinion](vistas/opinion.png)
 
 __***Educacion y Opinion (responsive)***__
+- La seccion Opinion forma otra estructura en la version desktop.
 ![Educacion-mobil](vistas/educaicon-mobil.png) | ![opinion-mobil](vistas/opinion-mobil.png)
 
 __***Carrusel***__
+- La seccion Carrusel esta formado por 6 item y en la version responsive no aparece.
 ![Carrusel](vistas/carrusel.png)
 
 __***Footer***__
