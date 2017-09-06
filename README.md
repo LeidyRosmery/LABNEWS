@@ -36,6 +36,7 @@ Somos un grupo conformado por gente comprometida y talentosa. Nuestra mision es 
 ### Inicio
 - Cuenta con una barra superior, el logo, el navbar y una noticia principal
 ![Wanderlust Demo Part I](https://s-media-cache-ak0.pinimg.com/originals/8b/9a/09/8b9a0915b49c610a7927a283044402df.gif)
+![texto cualquiera por si no carga la imagen](url completa de la imagen)
 ### Footer
 - Cuenta con 3 columnas y un boton a la derecha que te dirige al principio de la pagina.
-![Wanderlust Demo Part II](https://drive.google.com/file/d/0B3NtnB2-3W5PaXp6NlYyNjQwNGs/view?usp=sharing)
+![footer](https://drive.google.com/file/d/0B3NtnB2-3W5PaXp6NlYyNjQwNGs)
