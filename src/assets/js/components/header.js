@@ -3,6 +3,8 @@ const Header = () => {
     const header = $('<header class="header"></header>');
     const menuLab = $('<div class="menu hidden-xs padBoth"></div>');
     const itemLeft=$('<div class="menu menu--item"></div>');
+    const optionItem=$('<div id="returnMenu" class="return menu--option"></div>');
+    const imgOption=$('<i class="fa fa-chevron-left fa-2x" aria-hidden="true"><');
     const optionItem1=$('<div class="menu--option"></div>');
     const imgOption1=$('<img src="assets/img/menu.png" alt="">');
     const textOption1=$('<span> SECTION</span> ');
@@ -11,6 +13,8 @@ const Header = () => {
     const textOption2=$('<span> SEARCH</span> ');
     header.append(menuLab);
     menuLab.append(itemLeft);
+    itemLeft.append(optionItem);
+    optionItem.append(imgOption);
     itemLeft.append(optionItem1);
     optionItem1.append(imgOption1);
     optionItem1.append(textOption1);
@@ -60,6 +64,8 @@ const Header = () => {
     const lineBurger1 = $('<span class="icon-bar" ></span>');
     const lineBurger2 = $('<span class="icon-bar" ></span>');
     const lineBurger3 = $('<span class="icon-bar" ></span>');
+    //const optionItem=$('<div id="returnMenu" class="return menu--option"></div>');
+    const returnMenu=$('<i id="menuMovil" class=" fa fa-chevron-up " aria-hidden="true"></i>');
     const logoLab = $('<img class="navbar-brand" alt="Laboratoria" src="assets/img/logoicon.png">');
     const navCollapse = $('<div class="collapse navbar-collapse pd" id="navegacion"></div>');
     const navLista = $('<ul class="nav navbar-nav" role="tablist"></ul>');
@@ -74,11 +80,12 @@ const Header = () => {
     const itemLista9 = $('<li><a href="#" class="item-nav ">Deporte</a></li>');
     header.append(navLabNews);
     navLabNews.append(navHeader);
+    navHeader.append(returnMenu);
+    navHeader.append(logoLab);
     navHeader.append(btnBurger);
     btnBurger.append(lineBurger1);
     btnBurger.append(lineBurger2);
     btnBurger.append(lineBurger3);
-    navHeader.append(logoLab);
     navLabNews.append(navCollapse);
     navCollapse.append(navLista);
     navLista.append(itemLista1);

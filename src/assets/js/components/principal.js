@@ -21,7 +21,6 @@ const Principal = (update) => {
     row.on('click', () => {
         state.currentScreen = 'article';
         laboratoriaNews.id = 0;
-
         getJSON('/api/news/' + laboratoriaNews.id, (err, json) => {
             laboratoriaNews.selectedNews = json;
             update();

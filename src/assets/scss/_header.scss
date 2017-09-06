@@ -2,6 +2,19 @@
 .menu.padBoth {
     border-bottom: 0.1em solid #939393;
 }
+
+#returnMenu {
+    display: none;
+    color: $brand-color;
+}
+
+#menuMovil {
+    display: none;
+    color: $brand-color;
+    position: absolute;
+    top: 1.3em;
+}
+
 .navbar-default {
     background: $accent-color;
     border: none;
@@ -39,13 +52,15 @@
     font-size: 1.06em;
     justify-content: space-between;
 
-
     &--item {
         border-bottom: $secondary-color 0.05em;
     }
 
     &--option {
         padding: 1em 0.8em;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
     }
 }
 @media (min-width: 768px) {

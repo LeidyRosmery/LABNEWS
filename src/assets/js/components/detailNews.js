@@ -1,4 +1,5 @@
 const DetailNews = (update) => {
+
     const detailNews = $('<section class="educacion padBoth">');
     const container = $('<div class="container-fluid ">');
     const row = $("<div class='row pdx1'>");
@@ -7,7 +8,7 @@ const DetailNews = (update) => {
     const divImg1 = $("<div class='pd col-lg-12 col-md-12 col-xs-12 col-sm-12 '>");
     const img1 = $('<img class="news news--img__lg img--lg img-responsive" src="assets/img/foto-n1.png" alt="">');
     const hr2 = $('<hr class="article--borde pdx1">');
-    const row3 =$("<div class='row'>");
+    const row3 = $("<div class='row'>");
     const divText1 = $("<div class='title--article text-left col-lg-9 col-md-12 col-xs-12 col-sm-12'>");
     const title1 = $('<h2 class=""> ' + laboratoriaNews.news[0].title + '</h2>');
     const divTexts = $("<div class='title--article text-left col-lg-6 col-md-12 col-xs-12 col-sm-12'>");
@@ -41,17 +42,10 @@ const DetailNews = (update) => {
     const XSimgRelation2 = $('<img class=" img-responsive" src="assets/img/foto-n4.png" alt="">');
     const XStextTitle2 = $('<p class="">Laboratoria 2017 Titulo Noticia</p>');
     const XStextTitle3 = $('<p class="">Laboratoria 2017 Titulo Noticia</p>');
-
-
-
-
-
     const news3 = $(newsText[3] + '</p>');
     const news4 = $(boldFont(newsText[4], 25, 60) + '</p>');
     const news5 = $(newsText[5] + '</p>');
-
     const XSpopularNews = $('<div class="hidden-lg row"></div>');
-
     const XSsubItem1 = $('<div class="col-lg-12  col-xl-12  col-sm-12 col-xs-12 ">');
     const XSimgSubItem1 = $('<img class="news imgArticle img-responsive img--sm" src="assets/img/foto-n5.png" alt="">');
     const XSdivTextSubItem1 = $('<div class="detailArticle  news--detail__sm detail--sm col-lg-12  col-xl-12  col-sm-12 col-xs-12">');
@@ -81,7 +75,7 @@ const DetailNews = (update) => {
     colRight.append(divPerfil);
     divPerfil.append(divLeft)
     divLeft.append(imgPerfil);
-      divPerfil.append(divRight)
+    divPerfil.append(divRight)
     divRight.append(person);
     divRight.append(date);
     divRight.append(socialMedia);
@@ -177,6 +171,19 @@ const DetailNews = (update) => {
     subItem5.append(imgSubItem5);
     subItem5.append(divTextSubItem5);
     divTextSubItem5.append(textSubItem5);
+    $("#returnMenu").css("display", "block");
+    $("#menuMovil").css("display", "block");
+
+    $("#returnMenu").on('click', () => {
+        state.currentScreen = 'principal';
+        update();
+    });
+
+    $("#menuMovil").on('click', () => {
+        state.currentScreen = 'principal';
+        update();
+    });
+
 
     return detailNews;
 }
