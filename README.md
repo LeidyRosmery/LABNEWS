@@ -47,7 +47,7 @@ __***Tecnologia***__
 
 __***Mundo y Tecnologia - responsive***__
 - Las secciones Mundo y Tecnologia en version responsive.
-![mundo-mobil](vistas/mundo-mobil.png) | ![tecnologia-mobil](vistas/tecnologia-mobil.png)
+![mundo-mobil](vistas/header-mobil.png) | ![tecnologia-mobil](vistas/tecnologia-mobil.png)
 
 __***Educacion***__
 - La seccion Educacion forma otra estructura en la version desktop.
@@ -57,7 +57,7 @@ __***Opinion***__
 - La seccion Opinion forma otra estructura en la version desktop.
 ![Opinion](vistas/opinion.png)
 
-__***Educacion y Opinion (responsive)***__
+__***Educacion y Opinion - responsive***__
 - La seccion Opinion forma otra estructura en la version desktop.
 ![Educacion-mobil](vistas/educacion-mobil.png) | ![opinion-mobil](vistas/opinion-mobil.png)
 
