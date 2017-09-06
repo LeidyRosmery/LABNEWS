@@ -40,26 +40,26 @@ __***Inicio***__
 __***Mundo***__
 ![Mundo](vistas/mundo.png)
 
-__***Tecnologia***__
+__*** Tecnologia ***__
 ![Tecnologia](vistas/tecnologia.png)
 
-__***Mundo y Tecnologia (responsive)***__
+__*** Mundo y Tecnologia (responsive)***__
 ![Mundo-mobil](vistas/mundo-mobil.png) | ![Tecnologia-mobil](vistas/tecnologia-mobil.png)
 
-__***Educacion***__
+__*** Educacion ***__
 ![Educacion](vistas/educacion.png)
 
-__***Opinion***__
+__*** Opinion ***__
 ![Opinion](vistas/opinion.png)
 
-__***Educacion y Opinion (responsive)***__
+__*** Educacion y Opinion (responsive) ***__
 ![Educacion-mobil](vistas/educaicon-mobil.png) | ![opinion-mobil](vistas/opinion-mobil.png)
 
-__***Carrusel***__
+__*** Carrusel ***__
 ![Carrusel](vistas/carrusel.png)
 
-__***Footer***__
+__*** Footer ***__
 - Cuenta con 3 columnas y un boton a la derecha que te dirige al principio de la pagina.
-- En la vista responsive, el footer, tiene el logo al centro y un texto breve. El boton de  "subir" ya no aparece.
 ![footer](vistas/footer.png)
+- En la vista responsive, el footer, tiene el logo al centro y un texto breve. El boton de  "subir" ya no aparece.
 ![footer](vistas/footer-mobil.png)
