@@ -33,13 +33,30 @@ Somos un grupo conformado por gente comprometida y talentosa. Nuestra mision es 
 - **Mobil** :Puedes verlo haciendo click [aquí](https://drive.google.com/file/d/0B6QwL6rGulDtX2pjV1loRW9KbTg/view?usp=sharing).
 
 ## Responsive
-### Inicio
+__***Inicio***__
 - Cuenta con una barra superior, el logo, el navbar y una noticia principal
 ![header-desktop](vistas/nav.png)
 - Existen 3 noticias secundarias
 ![secondary-desktop](vistas/secondary.png)
 - En la **version responsive**, desaparece el navbar y se convierte en un menu hamburguesa. El logo pasa a la parte superior izquierda. La noticia principal y secundarias pasan a formar otra estructura.
 ![header-mobil](vistas/header-mobil.png) | ![secondary-mobil](vistas/secondary-mobil.png)
-### Footer
+
+__***Mundo***__
+![Mundo](vistas/mundo.png) | ![mundo-mobil](vistas/mundo-mobil.png)
+
+__***Tecnologia***__
+![Tecnologia](vistas/tecnologia.png) | ![mundo-mobil](vistas/tecnologia-mobil.png)
+
+__***Educacion***__
+![Educacion](vistas/educacion.png) | ![mundo-mobil](vistas/educacion-mobil.png)
+
+__***Opinion***__
+![Opinion](vistas/opinion.png) | ![mundo-mobil](vistas/opinion-mobil.png)
+
+__***Carrusel***__
+![Carrusel](vistas/carrusel.png)
+
+__***Footer***__
 - Cuenta con 3 columnas y un boton a la derecha que te dirige al principio de la pagina.
-![footer](vistas/mundo.png) |
+- En la vista responsive, el footer, tiene el logo al centro y un texto breve. El boton de  "subir" ya no aparece.
+![footer](vistas/footer.png) | ![footer](vistas/footer-mobil.png)
