@@ -46,8 +46,12 @@ __***Tecnologia***__
 ![Tecnologia](vistas/tecnologia.png)
 
 __***Mundo y Tecnologia - responsive***__
+- En la **version responsive**, desaparece el navbar y se convierte en un menu hamburguesa. El logo pasa a la parte superior izquierda. La noticia principal y secundarias pasan a formar otra estructura.
+![header-mobil](vistas/header-mobil.png) | ![secondary-mobil](vistas/secondary-mobil.png)
+- En la **version responsive**, desaparece el navbar y se convierte en un menu hamburguesa. El logo pasa a la parte superior izquierda. La noticia principal y secundarias pasan a formar otra estructura.
+![header-mobil](vistas/mundo-mobil.png) | ![secondary-mobil](vistas/tecnologia-mobil.png)
 - Las secciones Mundo y Tecnologia en version responsive.
-![mundo-mobil](vistas/header-mobil.png) | ![tecnologia-mobil](vistas/tecnologia-mobil.png)
+![mundo-mobil](vistas/header-mobil.png) | ![tecnologia-mobil](vistas/secondary-mobil.png)
 
 __***Educacion***__
 - La seccion Educacion forma otra estructura en la version desktop.
