@@ -14,13 +14,6 @@ Somos un grupo conformado por gente comprometida y talentosa. Nuestra mision es 
 
 ## Secciones desarrolladas
 
-| SECCION |
-| ---------- | ---------- |
-| Barra superior   | Tecnologia   |
-| Noticia principal   | Educacion   |
-| Noticia secundaria  | Opinion   |
-| Mundo  | Carrusel   |
-
 | SECCION |SECCION |
 | ---------- | ---------- |
 | Barra superior   | Tecnologia   |
