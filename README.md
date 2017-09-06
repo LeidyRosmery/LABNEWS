@@ -59,7 +59,7 @@ __***Opinion***__
 
 __***Educacion y Opinion (responsive)***__
 - La seccion Opinion forma otra estructura en la version desktop.
-![Educacion-mobil](vistas/educaicon-mobil.png) | ![opinion-mobil](vistas/opinion-mobil.png)
+![Educacion-mobil](vistas/educacion-mobil.png) | ![opinion-mobil](vistas/opinion-mobil.png)
 
 __***Carrusel***__
 - La seccion Carrusel esta formado por 6 item y en la version responsive no aparece.
