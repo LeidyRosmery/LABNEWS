@@ -3,15 +3,11 @@
 Somos un grupo conformado por gente comprometida y talentosa. Nuestra mision es servir al pais entregando informacion , entretenimiento y educacion a traves de contenidos de primera calidad  Puedes ver el demo del website haciendo click [aquí](https://labnewproyectofinal.herokuapp.com/).
 
 ## Secciones desarrolladas
-- Barra superior
-- Noticia principal
-- Noticia secundaria
-- Mundo
-- Tecnologia
-- Educacion
-- Opinion
-- Carrusel
-- Footer
+- Barra superior  |  - Tecnologia  
+- Noticia principal | - Educacion
+- Noticia secundaria  | - Opinion
+- Mundo | - Carrusel
+- Footer  
 
 ### Resumen:
 
@@ -42,16 +38,22 @@ __***Inicio***__
 ![header-mobil](vistas/header-mobil.png) | ![secondary-mobil](vistas/secondary-mobil.png)
 
 __***Mundo***__
-![Mundo](vistas/mundo.png) | ![mundo-mobil](vistas/mundo-mobil.png)
+![Mundo](vistas/mundo.png)
 
 __***Tecnologia***__
-![Tecnologia](vistas/tecnologia.png) | ![mundo-mobil](vistas/tecnologia-mobil.png)
+![Tecnologia](vistas/tecnologia.png)
+
+__***Mundo y Tecnologia (responsive)***__
+![Mundo-mobil](vistas/mundo-mobil.png) | ![Tecnologia-mobil](vistas/tecnologia-mobil.png)
 
 __***Educacion***__
-![Educacion](vistas/educacion.png) | ![mundo-mobil](vistas/educacion-mobil.png)
+![Educacion](vistas/educacion.png)
 
 __***Opinion***__
-![Opinion](vistas/opinion.png) | ![mundo-mobil](vistas/opinion-mobil.png)
+![Opinion](vistas/opinion.png)
+
+__***Educacion y Opinion (responsive)***__
+![Educacion-mobil](vistas/educaicon-mobil.png) | ![opinion-mobil](vistas/opinion-mobil.png)
 
 __***Carrusel***__
 ![Carrusel](vistas/carrusel.png)
@@ -59,4 +61,5 @@ __***Carrusel***__
 __***Footer***__
 - Cuenta con 3 columnas y un boton a la derecha que te dirige al principio de la pagina.
 - En la vista responsive, el footer, tiene el logo al centro y un texto breve. El boton de  "subir" ya no aparece.
-![footer](vistas/footer.png) | ![footer](vistas/footer-mobil.png)
+![footer](vistas/footer.png)
+![footer](vistas/footer-mobil.png)
