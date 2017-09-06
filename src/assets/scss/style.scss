@@ -256,13 +256,17 @@ $separator-row: 1.5vh;
 
 .imgArticle {
     @extend .news--img__sm;
-    height: 12vh;
+    height: 14vh;
 }
 
 .article {
     &--borde {
         padding: 0.05em 32em;
         background:$brand-color;
-        margin: 1em 0.4em 0;
+        margin: 1em 0.4em 0em;
+    }
+
+    &--title {
+      font-size: 1.5em;
     }
 }
