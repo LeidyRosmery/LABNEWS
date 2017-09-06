@@ -1,4 +1,174 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+const Secondary = () => {
+
+    const secondary = $('<section id="principal" class="principal padBoth">');
+    const container = $('<div class="container-fluid ">');
+    const row2 = $('<div class="row ">');
+    const divImg2 = $('<div class="pd col-lg-6 col-md-6 col-xs-12 col-sm-12 ">');
+    const img2 = $('<img class="news news--img__lg  img--md img-responsive" src="assets/img/' + laboratoriaNews.news[1].img + '">');
+    const divText2 = $('<div class="news--detail  detail--md col-lg-6 col-md-6 col-xs-12 col-sm-12 ">');
+    const text2 = $('  <p class="news--titleLetter title"> ' + changeColor(laboratoriaNews.news[1].title, 4, 8) + '</p>');
+    //console.log('que pasa'+laboratoriaNews.news[1].title.split(" "));
+
+    const letter1 = $('<span class="news--letter letter--md">HOY</span>');
+    secondary.append(container);
+    container.append(row2);
+    row2.append(divImg2)
+    divImg2.append(img2);
+    divImg2.append(divText2);
+    divText2.append(text2);
+    divText2.append(letter1);
+
+
+    const divImg3 = $('<div class="pd col-lg-3 col-md-3 col-xs-12 col-sm-12 ">');
+    const img3 = $('<img class="news news--img__lg img-responsive img--sm" src="assets/img/' + laboratoriaNews.news[2].img + '" alt="">');
+    const divText3 = $('<div class="news--detail detail--sm col-lg-3 col-md-3 col-xs-12 col-sm-12 ">');
+    const text3 = $('  <p class="title">' + changeColor(laboratoriaNews.news[2].title, 4, 7) + '</p>');
+    row2.append(divImg3)
+    divImg3.append(img3);
+    divImg3.append(divText3);
+    divText3.append(text3);
+
+    const divImg4 = $('<div class="pd col-lg-3 col-md-3 col-xs-12 col-sm-12 new" >');
+    const img4 = $('<img class="news news--img__lg img-responsive img--sm" src="assets/img/' + laboratoriaNews.news[3].img + '" alt="">');
+    const divText4 = $('<div class="news--detail detail--sm col-lg-3 col-md-3 col-xs-12 col-sm-12 new__textLG" >');
+    const text4 = $('  <p class="title">' + changeColor(laboratoriaNews.news[3].title, 3, 5) + '</p>');
+    row2.append(divImg4)
+    divImg4.append(img4);
+    divImg4.append(divText4);
+    divText4.append(text4);
+
+    return secondary;
+}
+
+const DetailNews = (update) => {
+    const detailNews = $('<section class="educacion padBoth">');
+    const container = $('<div class="container-fluid ">');
+    const row = $("<div class='row'>");
+    const hr1 = $('<hr class="article--borde">');
+    const tituloSeccion = $(' <div class="pd col-lg-12 col-md-12 col-xs-12 "><h3 class="category--title">EDUCACION</h3><hr class="category--underline"></div> ');
+    const divImg1 = $("<div class='pd col-lg-12 col-md-12 col-xs-12 col-sm-12 '>");
+    const img1 = $('<img class="news news--img__lg img--lg img-responsive" src="assets/img/foto-n1.png" alt="">');
+    const hr2 = $('<hr class="article--borde">');
+    const divText1 = $("<div class=' text-justify col-lg-9 col-md-12 col-xs-12 col-sm-12'>");
+    const title1 = $('<h2 class=""> ' + laboratoriaNews.news[0].title + '</h2>');
+    const text1 = $('<p  class="hidden-xs  hidden-xs"><strong> ' + laboratoriaNews.news[0].brief + '</strong></p>');
+
+    detailNews.append(container)
+    container.append(row);
+    row.append(hr1);
+    row.append(tituloSeccion);
+    row.append(divImg1);
+    divImg1.append(divText1);
+    divText1.append(title1);
+    divText1.append(text1);
+    divImg1.append(img1);
+    row.append(hr2);
+    const row2 = $("<div class='row'>");
+    const colLeft = $('<div class="pd text-justify col-lg-3 col-md-12 col-xs-12 ">');
+    const news = $(laboratoriaNews.selectedNews.body);
+    const newsText = laboratoriaNews.selectedNews.body.split("</p>");
+    const news0 = (boldFont(changeColor(boldFont(newsText[0], 27, 45), 49, 52), 5, 11) + '</p>');
+    const news1 = $(newsText[1]+ '</p>');
+    const news2 = $(newsText[2]+ '</p>');
+    const news3 = $(newsText[3]+ '</p>');
+    const news4 = $(boldFont(newsText[4], 25, 60) + '</p>');
+    const news5 = $(newsText[5]+ '</p>');
+    const news6 = $(newsText[6]+ '</p>');
+    const news7 = $(changeColor(newsText[7], 3, 10) + '</p>');
+    const colRight = $('<div class="pd text-justify col-lg-9 col-md-12 col-xs-12 ">');
+    const divPerfil = $('<div class="pd text-justify col-lg-12 col-md-12 col-xs-12 ">');
+    const imgPerfil = $('<img class="perfil" src="assets/img/dianaluque.png" alt="">');
+    const person = $("<span>DIANA LUQUE LAVADO </span>");
+    const date = $("<span>22.06.17 12:36 pm </span>");
+    const socialMedia = $("<span>@photosynthetica</span>");
+    container.append(row2);
+
+    row2.append(colRight);
+    row2.append(colLeft);
+    colRight.append(divPerfil);
+    divPerfil.append(imgPerfil);
+    divPerfil.append(person);
+    divPerfil.append(date);
+    divPerfil.append(socialMedia);
+    colRight.append(news0);
+    colRight.append(news1);
+    colRight.append(news2);
+    colRight.append(news3);
+    colRight.append(news4);
+    colRight.append(news5);
+    colRight.append(news6);
+    colRight.append(news7);
+
+
+    const relationNews = $('<div class="row"></div>');
+    const titleRelationNews = $(' <div class="pdx1  col-lg-12 col-md-12 col-xs-12 "><h3 class="category--title">NOTICIAS RELACIONADAS</h3><hr class="category--underline"></div><br> ');
+    const col1 = $('<div class="col-lg-6 "></div>');
+    const imgRelation1 = $('<img class=" img-responsive" src="assets/img/foto-n3.png" alt="">');
+    const col2 = $('<div class="col-lg-6 "></div>');
+    const imgRelation2 = $('<img class=" img-responsive" src="assets/img/foto-n4.png" alt="">');
+    const textTitle2 = $('<p class="">Laboratoria 2017 Titulo Noticia</p>');
+    const textTitle3 = $('<p class="">Laboratoria 2017 Titulo Noticia</p>');
+    colLeft.append(relationNews);
+    relationNews.append(titleRelationNews);
+    relationNews.append(col1);
+    relationNews.append(col2);
+    col1.append(imgRelation1);
+    col2.append(imgRelation2);
+    col1.append(textTitle2);
+    col2.append(textTitle3);
+
+    const popularNews = $('<div class="row"></div>');
+    colLeft.append(popularNews);
+    const subItem1 = $('<div class="col-lg-12  col-xl-12  col-sm-12 col-xs-12 ">');
+    const imgSubItem1 = $('<img class="news imgArticle img-responsive img--sm" src="assets/img/foto-n5.png" alt="">');
+    const divTextSubItem1 = $('<div class="detailArticle  news--detail__sm detail--sm col-lg-12  col-xl-12  col-sm-12 col-xs-12">');
+    const textSubItem1 = $('<p class="">Noticia mas popular Laboratoria 2017</p>');
+    const titleRelationNews1 = $(' <div class="pdx1  col-lg-12 col-md-12 col-xs-12 "><h3 class="category--title">NOTICIAS POPULARES</h3><hr class="category--underline"></div><br><br> ');
+    popularNews.append(titleRelationNews1);
+    subItem1.append(imgSubItem1);
+    subItem1.append(divTextSubItem1);
+    divTextSubItem1.append(textSubItem1);
+
+    const subItem2 = $('<div class="col-lg-12  col-xl-12  col-sm-12 col-xs-12 ">');
+    const imgSubItem2 = $('<img class="news imgArticle  img-responsive img--sm" src="assets/img/foto-n6.png" alt="">');
+    const divTextSubItem2 = $('<div class="detailArticle  news--detail__sm detail--sm col-lg-12  col-xl-12  col-sm-12 col-xs-12">');
+    const textSubItem2 = $('<p class="">Noticia mas popular Laboratoria 2017</p>');
+    popularNews.append(subItem2);
+    subItem2.append(imgSubItem2);
+    subItem2.append(divTextSubItem2);
+    divTextSubItem2.append(textSubItem2);
+
+    const subItem3 = $('<div class="col-lg-12  col-xl-12  col-sm-12 col-xs-12 ">');
+    const imgSubItem3 = $('<img class="news imgArticle  img-responsive img--sm" src="assets/img/foto-n7.png" alt="">');
+    const divTextSubItem3 = $('<div class="detailArticle news--detail__sm detail--sm col-lg-12  col-xl-12  col-sm-12 col-xs-12">');
+    const textSubItem3 = $('<p class="">Noticia mas popular Laboratoria 2017</p>');
+    popularNews.append(subItem3);
+    subItem3.append(imgSubItem3);
+    subItem3.append(divTextSubItem3);
+    divTextSubItem3.append(textSubItem3);
+
+    const subItem4 = $('<div class="col-lg-12  col-xl-12  col-sm-12 col-xs-12 ">');
+    const imgSubItem4 = $('<img class="news imgArticle  img-responsive img--sm" src="assets/img/foto-n8.png" alt="">');
+    const divTextSubItem4 = $('<div class="detailArticle news--detail__sm detail--sm col-lg-12  col-xl-12  col-sm-12 col-xs-12">');
+    const textSubItem4 = $('<p class="">Noticia mas popular Laboratoria 2017</p>');
+    popularNews.append(subItem4);
+    subItem4.append(imgSubItem4);
+    subItem4.append(divTextSubItem4);
+    divTextSubItem4.append(textSubItem4);
+
+    const subItem5 = $('<div class="col-lg-12  col-xl-12  col-sm-12 col-xs-12 ">');
+    const imgSubItem5 = $('<img class="news imgArticle img-responsive img--sm" src="assets/img/foto-n9.png" alt="">');
+    const divTextSubItem5 = $('<div class="detailArticle news--detail__sm detail--sm col-lg-12  col-xl-12  col-sm-12 col-xs-12">');
+    const textSubItem5 = $('<p class="">Noticia mas popular Laboratoria 2017</p>');
+    popularNews.append(subItem5);
+    subItem5.append(imgSubItem5);
+    subItem5.append(divTextSubItem5);
+    divTextSubItem5.append(textSubItem5);
+
+    return detailNews;
+}
+
 const Carousel=()=>{
   const carousel = $('<section class="pdx2  carousel padBoth">');
   const container = $('<div class="container-fluid ">');
@@ -21,7 +191,7 @@ item1.append(rowItem);
 const subItem = $('<div class=" slider--itemCarousel col-lg-3  col-md-6 col-sm-6 col-xs-6">');
 const imgSubItem = $('<img class="news--img__md img-responsive " src="assets/img/' + laboratoriaNews.news[10].img + '" alt="">');
 const divTextSubItem = $('<div class=" news news--detail pd col-lg-3  col-md-6 col-sm-6 col-xs-6 ">');
-const textSubItem = $('  <p>' + laboratoriaNews.news[10].title + ' </p>');
+const textSubItem = $('  <p class="title">' + laboratoriaNews.news[10].title + ' </p>');
 rowItem.append(subItem);
 subItem.append(imgSubItem);
 subItem.append(divTextSubItem);
@@ -30,7 +200,7 @@ divTextSubItem.append(textSubItem);
 const subItem1 = $('<div class=" slider--itemCarousel col-lg-3  col-md-6 col-sm-6 col-xs-6">');
 const imgSubItem1 = $('<img class="news--img__md img-responsive " src="assets/img/' + laboratoriaNews.news[11].img + '" alt="">');
 const divTextSubItem1 = $('<div class=" news news--detail pd col-lg-3  col-md-6 col-sm-6 col-xs-6 ">');
-const textSubItem1 = $('  <p>' + laboratoriaNews.news[11].title + ' </p>');
+const textSubItem1 = $('  <p class="title">' + laboratoriaNews.news[11].title + ' </p>');
 rowItem.append(subItem1);
 subItem1.append(imgSubItem1);
 subItem1.append(divTextSubItem1);
@@ -39,7 +209,7 @@ divTextSubItem1.append(textSubItem1);
 const subItem2 = $('<div class=" slider--itemCarousel col-lg-3  hidden-xs">');
 const imgSubItem2 = $('<img class="news--img__md img-responsive img--sm" src="assets/img/' + laboratoriaNews.news[12].img + '" alt="">');
 const divTextSubItem2 = $('<div class="news news--detail detail--sm pd col-lg-3  col-md-6 col-sm-6 col-xs-6 ">');
-const textSubItem2 = $('  <p>' +laboratoriaNews.news[12].title  + ' </p>');
+const textSubItem2 = $('  <p class="title">' +laboratoriaNews.news[12].title  + ' </p>');
 rowItem.append(subItem2);
 subItem2.append(imgSubItem2);
 subItem2.append(divTextSubItem2);
@@ -48,7 +218,7 @@ divTextSubItem2.append(textSubItem2);
 const subItem3 = $('<div class=" slider--itemCarousel col-lg-3  hidden-xs">');
 const imgSubItem3 = $('<img class="news--img__md img-responsive img--sm" src="assets/img/' + laboratoriaNews.news[13].img + '" alt="">');
 const divTextSubItem3 = $('<div class="news news--detail detail--sm pd col-lg-3  col-md-6 col-sm-6 col-xs-6 ">');
-const textSubItem3 = $('  <p>' + laboratoriaNews.news[13].title + '</p>');
+const textSubItem3 = $('  <p class="title">' + laboratoriaNews.news[13].title + '</p>');
 rowItem.append(subItem3);
 subItem3.append(imgSubItem3);
 subItem3.append(divTextSubItem3);
@@ -68,7 +238,7 @@ mainCarousel.append(controlRight);
 }
 
 'use strict';
-const Principal = () => {
+const Principal = (update) => {
     const principal = $('<section id="principal" class="principal padBoth">');
     const container = $('<div class="container-fluid ">');
     const row = $("<div class='row'>");
@@ -76,7 +246,7 @@ const Principal = () => {
     const divImg1 = $("<div class='pd col-lg-12 col-md-12 col-xs-12 col-sm-12 '>");
     const img1 = $('<img class="news news--img__lg img--lg img-responsive" src="assets/img/' + laboratoriaNews.news[0].img + '" alt="">');
     const divText1 = $("<div class=' text-justify col-lg-8 col-md-12 col-xs-12 col-sm-12 newsInf'>");
-    const title1 = $('<h2 class="title-news"> ' + laboratoriaNews.news[0].title + '</h2>');
+    const title1 = $('<h2 class="title-news title"> ' + laboratoriaNews.news[0].title + '</h2>');
     const text1 = $('<p  class="hidden-xs newsInf--text hidden-xs"> ' + laboratoriaNews.news[0].brief + '</p>');
     principal.append(container);
     container.append(row);
@@ -87,40 +257,16 @@ const Principal = () => {
     divText1.append(title1);
     divText1.append(text1);
 
-    const row2 = $('<div class="row ">');
-    const divImg2 = $('<div class="pd col-lg-6 col-md-6 col-xs-12 col-sm-12 ">');
-    const img2 = $('<img class="news news--img__lg  img--md img-responsive" src="assets/img/' + laboratoriaNews.news[1].img + '">');
-    const divText2 = $('<div class="news--detail detail--md col-lg-6 col-md-6 col-xs-12 col-sm-12 ">');
-    const text2 = $('  <p class="news--titleLetter"> ' + changeColor(laboratoriaNews.news[1].title , 4,8)+ '</p>');
-    //console.log('que pasa'+laboratoriaNews.news[1].title.split(" "));
+    row.on('click', () => {
+        state.currentScreen = 'article';
+        laboratoriaNews.id = 0;
 
-    const letter1 = $('<span class="news--letter letter--md">HOY</span>');
-
-    container.append(row2);
-    row2.append(divImg2)
-    divImg2.append(img2);
-    divImg2.append(divText2);
-    divText2.append(text2);
-    divText2.append(letter1);
-
-
-    const divImg3 = $('<div class="pd col-lg-3 col-md-3 col-xs-12 col-sm-12 ">');
-    const img3 = $('<img class="news news--img__lg img-responsive img--sm" src="assets/img/' + laboratoriaNews.news[2].img + '" alt="">');
-    const divText3 = $('<div class="news--detail detail--sm col-lg-3 col-md-3 col-xs-12 col-sm-12 ">');
-    const text3 = $('  <p>' + changeColor(laboratoriaNews.news[2].title , 4,7) + '</p>');
-    row2.append(divImg3)
-    divImg3.append(img3);
-    divImg3.append(divText3);
-    divText3.append(text3);
-
-    const divImg4 = $('<div class="pd col-lg-3 col-md-3 col-xs-12 col-sm-12 new" >');
-    const img4 = $('<img class="news news--img__lg img-responsive img--sm" src="assets/img/' + laboratoriaNews.news[3].img + '" alt="">');
-    const divText4 = $('<div class="news--detail detail--sm col-lg-3 col-md-3 col-xs-12 col-sm-12 new__textLG" >');
-    const text4 = $('  <p>' + changeColor(laboratoriaNews.news[3].title , 3,5) + '</p>');
-    row2.append(divImg4)
-    divImg4.append(img4);
-    divImg4.append(divText4);
-    divText4.append(text4);
+        getJSON('/api/news/' + laboratoriaNews.id, (err, json) => {
+            laboratoriaNews.selectedNews = json;
+            update();
+        });
+        update();
+    });
 
     return principal;
 }
@@ -139,7 +285,7 @@ const Opinion = () => {
     const imgPlay = $('<img class="news--play news--play__lg play--md" src="assets/img/play-button.png" alt="">');
     const imgOpinion1 = $('<img class="news news--img__lg img--md img-responsive" src="assets/img/' + laboratoriaNews.news[24].img + '" alt="">');
     const divTextOpinion1 = $('<div class="news--detail col-lg-3  col-xl-3">');
-    const textOpinion1 = $('  <p class="news--titleLetter">' + changeColor(laboratoriaNews.news[24].title , 0,2)  + '</p>');
+    const textOpinion1 = $('  <p class="title news--titleLetter">' + changeColor(laboratoriaNews.news[24].title , 0,2)  + '</p>');
     const letter1 = $('<span class="news--letter">HOY</span>');
 
     row.append(itemOpinion1);
@@ -153,7 +299,7 @@ const Opinion = () => {
     const imgPlay2 = $('<img class="news--play news--play__lg play--md" src="assets/img/play-button.png" alt="">');
     const imgOpinion2 = $('<img class="news news--img__lg img--md img-responsive" src="assets/img/' + laboratoriaNews.news[25].img + '" alt="">');
     const divTextOpinion2 = $('<div class="news--detail col-lg-3  col-xl-3">');
-    const textOpinion2 = $('  <p class="news--titleLetter">' + changeColor(laboratoriaNews.news[25].title , 0,2)  + '</p>');
+    const textOpinion2 = $('  <p class="title news--titleLetter">' + changeColor(laboratoriaNews.news[25].title , 0,2)  + '</p>');
     const letter2 = $('<span class="news--letter">HOY</span>');
 
     row.append(itemOpinion2);
@@ -167,7 +313,7 @@ const Opinion = () => {
     const imgPlay3 = $('<img class="news--play news--play__lg play--sm" src="assets/img/play-button.png" alt="">');
     const imgOpinion3 = $('<img class="news news--img__lg img-responsive img--sm" src="assets/img/' + laboratoriaNews.news[26].img + '" alt="">');
     const divTextOpinion3 = $('<div class="news--detail detail--sm col-lg-3  col-xl-3">');
-    const textOpinion3 = $('  <p class="news--titleLetter">' + changeColor(laboratoriaNews.news[26].title , 0,2)  + '</p>');
+    const textOpinion3 = $('  <p class="title news--titleLetter">' + changeColor(laboratoriaNews.news[26].title , 0,2)  + '</p>');
     const letter3 = $('<span class="hidden-xs news--letter">HOY</span>');
 
     row.append(itemOpinion3);
@@ -181,7 +327,7 @@ const Opinion = () => {
     const imgPlay4 = $('<img class="news--play news--play__lg play--sm" src="assets/img/play-button.png" alt="">');
     const imgOpinion4 = $('<img class="news news--img__lg img-responsive img--sm" src="assets/img/' + laboratoriaNews.news[27].img + '" alt="">');
     const divTextOpinion4 = $('<div class="news--detail detail--sm col-lg-3  col-xl-3">');
-    const textOpinion4 = $('  <p class="news--titleLetter">' + changeColor(laboratoriaNews.news[27].title , 0,2) + '</p>');
+    const textOpinion4 = $('  <p class="title news--titleLetter">' + changeColor(laboratoriaNews.news[27].title , 0,2) + '</p>');
     const letter4 = $('<span class="hidden-xs news--letter">HOY</span>');
 
     row.append(itemOpinion4);
@@ -195,7 +341,7 @@ const Opinion = () => {
     const imgPlay5 = $('<img class="news--play news--play__lg play--sm" src="assets/img/play-button.png" alt="">');
     const imgOpinion5 = $('<img class="news news--img__lg img-responsive img--sm" src="assets/img/' + laboratoriaNews.news[26].img + '" alt="">');
     const divTextOpinion5 = $('<div class="news--detail detail--sm col-lg-3  col-xl-3">');
-    const textOpinion5 = $('  <p class="news--titleLetter">' + changeColor(laboratoriaNews.news[26].title , 0,2)  + '</p>');
+    const textOpinion5 = $('  <p class="title news--titleLetter">' + changeColor(laboratoriaNews.news[26].title , 0,2)  + '</p>');
     row.append(itemOpinion5);
     itemOpinion5.append(imgOpinion5);
     itemOpinion5.append(imgPlay5);
@@ -221,7 +367,7 @@ const Educacion = () => {
     const itemEducacion = $('<div class="pd col-lg-6  col-md-6 col-sm-12 col-xs-12 ">');
     const imgEducacion = $('<img class="news news--img__md  img-responsive" src="assets/img/' + laboratoriaNews.news[19].img + '" alt="">');
     const divTextEducacion = $('<div class="news--detail col-lg-6  col-md-6 col-sm-12 col-xs-12">');
-    const textEducacion = $('<p>' + changeColor(laboratoriaNews.news[19].title, 0, 2) + '</p>');
+    const textEducacion = $('<p class="title">' + changeColor(laboratoriaNews.news[19].title, 0, 2) + '</p>');
     col1.append(rowSubItem1);
     rowSubItem1.append(itemEducacion);
     itemEducacion.append(imgEducacion);
@@ -232,7 +378,7 @@ const Educacion = () => {
     const imgPlay = $('<img class="hidden-xs news--play news--play__md" src="assets/img/play-button.png" alt="">');
     const imgEducacion1 = $('<img class="news news--img__md  img-responsive" src="assets/img/' + laboratoriaNews.news[20].img + '" alt="">');
     const divTextEducacion1 = $('<div class="news--detail col-lg-6  col-md-6 col-sm-12 col-xs-12">');
-    const textEducacion1 = $('<p>' + changeColor(laboratoriaNews.news[20].title, 0, 2) + '</p>');
+    const textEducacion1 = $('<p class="title">' + changeColor(laboratoriaNews.news[20].title, 0, 2) + '</p>');
     rowSubItem1.append(itemEducacion1);
     itemEducacion1.append(imgEducacion1);
     itemEducacion1.append(imgPlay);
@@ -243,7 +389,7 @@ const Educacion = () => {
     const itemEducacion2 = $('<div class="pd col-lg-12  col-md-12  col-sm-12 col-xs-12">');
     const imgEducacion2 = $('<img class="news news--img__sm img-responsive img--sm" src="assets/img/' + laboratoriaNews.news[23].img + '" alt="">');
     const divTextEducacion2 = $('<div class="news--detail news--detail__sm detail--sm col-lg-6  col-md-6 col-sm-12 col-xs-12">');
-    const textEducacion2 = $('  <p class="titleLetter--sm">' + laboratoriaNews.news[23].title + ' newspaper</p>');
+    const textEducacion2 = $('  <p class="titleLetter--sm title">' + laboratoriaNews.news[23].title + ' newspaper</p>');
     const letter2 = $('<span class="hidden-lg news--letter letter--sm">HOY</span>');
     col1.append(rowSubItem2);
     rowSubItem2.append(itemEducacion2);
@@ -260,7 +406,7 @@ const Educacion = () => {
     const itemEducacion3 = $('<div class="pd col-lg-6  col-md-6 col-sm-12 col-xs-12 ">');
     const imgEducacion3 = $('<img class="news news--img__md  img-responsive img--sm" src="assets/img/' + laboratoriaNews.news[21].img + '" alt="">');
     const divTextEducacion3 = $('<div class="news--detail detail--sm col-lg-6  col-md-6 col-sm-12 col-xs-12">');
-    const textEducacion3 = $('  <p class="titleLetter--sm">' + laboratoriaNews.news[21].title + '</p>');
+    const textEducacion3 = $('  <p class="title titleLetter--sm">' + laboratoriaNews.news[21].title + '</p>');
     const letter3 = $('<span class="hidden-lg news--letter letter--sm">HOY</span>');
     col2.append(rowSubItem3);
     rowSubItem3.append(itemEducacion3);
@@ -272,7 +418,7 @@ const Educacion = () => {
     const itemEducacion4 = $('<div class="pd col-lg-6  col-md-6 col-sm-12 col-xs-12 hidden-xs ">');
     const imgEducacion4 = $('<img class="news news--img__md  img-responsive" src="assets/img/' + laboratoriaNews.news[22].img + '" alt="">');
     const divTextEducacion4 = $('<div class="news--detail col-lg-6  col-md-6 col-sm-12 col-xs-12">');
-    const textEducacion4 = $('<p class="news--titleLetter">' + laboratoriaNews.news[22].title + '</p>');
+    const textEducacion4 = $('<p class="title news--titleLetter">' + laboratoriaNews.news[22].title + '</p>');
     const letter4 = $('<span class="news--letter">HOY</span>');
     rowSubItem3.append(itemEducacion4);
     itemEducacion4.append(imgEducacion4);
@@ -284,7 +430,7 @@ const Educacion = () => {
     const itemEducacion5 = $('<div class="pd col-lg-12  col-md-12  col-sm-12 col-xs-12">');
     const imgEducacion5 = $('<img class="news news--img__sm img--sm img-responsive" src="assets/img/' + laboratoriaNews.news[24].img + '" alt="">');
     const divTextEducacion5 = $('<div class="news--detail news--detail__sm detail--sm col-lg-6  col-md-6 col-sm-12 col-xs-12">');
-    const textEducacion5 = $('  <p class="titleLetter--sm">' + changeColor(laboratoriaNews.news[24].title, 0, 2) + ' newspaper</p>');
+    const textEducacion5 = $('  <p class="title titleLetter--sm">' + changeColor(laboratoriaNews.news[24].title, 0, 2) + ' newspaper</p>');
     const letter5 = $('<span class="hidden-lg news--letter letter--sm">HOY</span>');
     col2.append(rowSubItem4);
     rowSubItem4.append(itemEducacion5);
@@ -311,7 +457,7 @@ const Tecnologia = () => {
     const imgPlay = $('<img class=" news--play news--play__sm play--lg" src="assets/img/play-button.png" alt="">');
     const imgTecnologia = $('<img class="news news--img__lg img--md img-responsive" src="assets/img/' + laboratoriaNews.news[14].img + '" alt="">');
     const divTextTecnologia = $('<div class="news--detail detail--md col-lg-3  col-md-3  col-xs-12 col-sm-12 " >');
-    const textTecnologia = $('  <p class="news--titleLetter">' + changeColor(laboratoriaNews.news[14].title , 0,3)  + '</p>');
+    const textTecnologia = $('  <p class="title news--titleLetter">' + changeColor(laboratoriaNews.news[14].title , 0,3)  + '</p>');
     const letter = $('<span class="news--letter news--letter__md letter--md">HOY</span>');
     row.append(itemTecnologia)
     itemTecnologia.append(imgTecnologia);
@@ -328,7 +474,7 @@ const Tecnologia = () => {
     const itemTecnologia1 = $('<div class="pd col-lg-6  col-md-6  hidden-xs hidden-sm ">');
     const imgTecnologia1 = $('<img class="news news--img__md img-responsive" src="assets/img/' + laboratoriaNews.news[15].img + '" alt="">');
     const divTextTecnologia1 = $('<div class="news--detail col-lg-3  col-md-3  col-xs-12 col-sm-12 " >');
-    const textTecnologia1 = $('  <p>' + laboratoriaNews.news[15].title + '</p>');
+    const textTecnologia1 = $('  <p class="title">' + laboratoriaNews.news[15].title + '</p>');
     col2.append(rowSubItem1);
     rowSubItem1.append(itemTecnologia1);
     itemTecnologia1.append(imgTecnologia1);
@@ -338,7 +484,7 @@ const Tecnologia = () => {
     const itemTecnologia2 = $('<div class="pd col-lg-6  col-md-6  hidden-xs hidden-sm ">');
     const imgTecnologia2 = $('<img class="news news--img__md img-responsive" src="assets/img/' + laboratoriaNews.news[16].img + '" alt="">');
     const divTextTecnologia2 = $('<div class="news--detail col-lg-3  col-md-3  col-xs-12 col-sm-12 " >');
-    const textTecnologia2 = $('  <p class="news--titleLetter">' + changeColor(laboratoriaNews.news[16].title , 0,2)  + '</p>');
+    const textTecnologia2 = $('  <p class="title news--titleLetter">' + changeColor(laboratoriaNews.news[16].title , 0,2)  + '</p>');
     const letter2 = $('<span class="news--letter">HOY</span>');
     rowSubItem1.append(itemTecnologia2);
     itemTecnologia2.append(imgTecnologia2);
@@ -350,7 +496,7 @@ const Tecnologia = () => {
     const itemTecnologia3 = $('<div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 pd">');
     const imgTecnologia3 = $('<img class="news news--img__sm img-responsive img--sm" src="assets/img/' + laboratoriaNews.news[17].img + '" alt="">');
     const divTextTecnologia3 = $('<div class="news--detail news--detail__sm detail--sm col-lg-12  col-md-12 col-sm-12 col-xs-12 ">');
-    const textTecnologia3 = $('  <p>' + laboratoriaNews.news[17].title + '</p>');
+    const textTecnologia3 = $('  <p class="title">' + laboratoriaNews.news[17].title + '</p>');
     col2.append(rowSubItem2);
     rowSubItem2.append(itemTecnologia3);
     itemTecnologia3.append(imgTecnologia3);
@@ -360,7 +506,7 @@ const Tecnologia = () => {
     const itemTecnologia4 = $('<div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 pd">');
     const divTextTecnologia4 = $('<div class="news--detail news--detail__sm detail--sm col-lg-12  col-md-12 col-sm-12 col-xs-12 ">');
     const imgTecnologia4 = $('<img class="news news--img__sm img-responsive img--sm" src="assets/img/' + laboratoriaNews.news[18].img + '" alt="">');
-    const textTecnologia4 = $('  <p>' + changeColor(laboratoriaNews.news[18].title , 0,2)  + '</p>');
+    const textTecnologia4 = $('  <p class="title">' + changeColor(laboratoriaNews.news[18].title , 0,2)  + '</p>');
     rowSubItem2.append(itemTecnologia4);
     itemTecnologia4.append(imgTecnologia4);
     itemTecnologia4.append(divTextTecnologia4);
@@ -371,7 +517,7 @@ const Tecnologia = () => {
 }
 
 'use strict';
-const Mundo = () => {
+const Mundo = (update) => {
     const mundo = $('<section class="mundo padBoth">');
     const container = $('<div class="container-fluid ">');
     const row1 = $("<div class='row'>");
@@ -380,7 +526,7 @@ const Mundo = () => {
     const imgPlay = $('<img class="news--play news--play__lg play--md" src="assets/img/play-button.png" alt="">');
     const imgMundo1 = $('<img class="news news--img__lg img-responsive img--md" src="assets/img/' + laboratoriaNews.news[4].img + '" alt="">');
     const divTextMundo1 = $('<div class="news--detail col-lg-3  col-md-3  col-xs-12 col-sm-12 " >');
-    const textMundo1 = $('  <p class="news--titleLetter">' + changeColor(laboratoriaNews.news[4].title , 0,2) + '</p>');
+    const textMundo1 = $('  <p class="title news--titleLetter">' + changeColor(laboratoriaNews.news[4].title , 0,2) + '</p>');
     const letter = $('<span class="news--letter">HOY</span>');
 
 
@@ -399,7 +545,7 @@ const Mundo = () => {
     const subItem = $('<div class="pd col-lg-6  col-md-6 col-sm-12 col-xs-12">');
     const imgSubItem = $('<img class="news--img__md img-responsive img--sm" src="assets/img/' + laboratoriaNews.news[5].img + '" alt="">');
     const divTextSubItem = $('<div class="news news--detail detail--sm col-lg-6 col-md-6  col-sm-12 col-xs-12 ">');
-    const textSubItem = $('  <p>' + changeColor(laboratoriaNews.news[5].title , 0,2)  + ' newspaper</p>');
+    const textSubItem = $('  <p class="title">' + changeColor(laboratoriaNews.news[5].title , 0,2)  + ' newspaper</p>');
     row1.append(itemMundo2);
     itemMundo2.append(rowSubItem1);
     rowSubItem1.append(subItem);
@@ -412,7 +558,7 @@ const Mundo = () => {
     const imgPlay1 = $('<img class="news--play news--play__md" src="assets/img/play-button.png" alt="">');
     const imgSubItem1 = $('<img class="news news--img__md img-responsive" src="assets/img/' + laboratoriaNews.news[6].img + '" alt="">');
     const divTextSubItem1 = $('<div  class="news--detail col-lg-6  col-xl-6 hidden-xs hidden-sm ">');
-    const textSubItem1 = $('  <p class="news--titleLetter">' + laboratoriaNews.news[6].title + '</p>');
+    const textSubItem1 = $('  <p class="title news--titleLetter">' + laboratoriaNews.news[6].title + '</p>');
     const letter1 = $('<span class="news--letter">HOY</span>');
     rowSubItem1.append(subItem1);
     subItem1.append(imgSubItem1);
@@ -426,7 +572,7 @@ const Mundo = () => {
     const subItem2 = $('<div class="pd col-lg-12  col-xl-12  col-sm-12 col-xs-12 pd">');
     const imgSubItem2 = $('<img class="news news--img__sm img-responsive img--sm" src="assets/img/' + laboratoriaNews.news[8].img + '" alt="">');
     const divTextSubItem2 = $('<div class="news--detail news--detail__sm detail--sm col-lg-12  col-xl-12  col-sm-12 col-xs-12">');
-    const textSubItem2 = $('  <p>' + laboratoriaNews.news[8].title + '</p>');
+    const textSubItem2 = $('  <p class="title">' + laboratoriaNews.news[8].title + '</p>');
     itemMundo2.append(rowSubItem2);
     rowSubItem2.append(subItem2);
     subItem2.append(imgSubItem2);
@@ -436,7 +582,7 @@ const Mundo = () => {
     const subItem3 = $('<div class="pd col-lg-12  col-xl-12  col-sm-12 col-xs-12 ">');
     const imgSubItem3 = $('<img class="news news--img__sm img-responsive img--sm" src="assets/img/' + laboratoriaNews.news[9].img + '" alt="">');
     const divTextSubItem3 = $('<div class="news--detail news--detail__sm detail--sm col-lg-12  col-xl-12  col-sm-12 col-xs-12">');
-    const textSubItem3 = $('  <p>' + changeColor(laboratoriaNews.news[9].title , 0,2)  + '</p>');
+    const textSubItem3 = $('  <p class="title">' + changeColor(laboratoriaNews.news[9].title , 0,2)  + '</p>');
     rowSubItem2.append(subItem3);
     subItem3.append(imgSubItem3);
     subItem3.append(divTextSubItem3);
@@ -445,7 +591,7 @@ const Mundo = () => {
     const itemMundo3 = $('<div class="pd col-lg-3 col-md-3  hidden-xs hidden-sm ">');
     const imgMundo3 = $('<img class="news news--img__lg img-responsive" src="assets/img/' + laboratoriaNews.news[7].img + '" alt="">');
     const divTextMundo3 = $('<div class="news--detail col-lg-3 col-md-3  hidden-xs hidden-sm ">');
-    const textMundo3 = $('<p>' + laboratoriaNews.news[7].title + '</p>');
+    const textMundo3 = $('<p class="title">' + laboratoriaNews.news[7].title + '</p>');
     row1.append(itemMundo3)
     itemMundo3.append(imgMundo3);
     itemMundo3.append(divTextMundo3);
@@ -458,7 +604,7 @@ const Mundo = () => {
     const itemMundo4 = $('<div class="pd col-lg-3">');
     const imgMundo4 = $('<img class="news news--img__md img-responsive" src="assets/img/' + laboratoriaNews.news[10].img + '" alt="">');
     const divTextMundo4 = $('<div class="news--detail col-lg-3">');
-    const textMundo4 = $('<p>' + laboratoriaNews.news[10].title + '</p>');
+    const textMundo4 = $('<p class="title">' + laboratoriaNews.news[10].title + '</p>');
     row2.append(itemMundo4)
     itemMundo4.append(imgMundo4);
     itemMundo4.append(divTextMundo4);
@@ -467,7 +613,7 @@ const Mundo = () => {
     const itemMundo5 = $('<div class="pd col-lg-3">');
     const imgMundo5 = $('<img class="news news--img__md img-responsive" src="assets/img/' + laboratoriaNews.news[11].img + '" alt="">');
     const divTextMundo5 = $('<div class="news--detail col-lg-3">');
-    const textMundo5 = $('<p class="news--titleLetter">' + laboratoriaNews.news[11].title + '</p>');
+    const textMundo5 = $('<p class="title news--titleLetter">' + laboratoriaNews.news[11].title + '</p>');
     const letter5 = $('<span class="news--letter">HOY</span>');
 
     row2.append(itemMundo5)
@@ -479,7 +625,7 @@ const Mundo = () => {
     const itemMundo6 = $('<div class="pd col-lg-3">');
     const imgMundo6 = $('<img class="news  news--img__md img-responsive" src="assets/img/' + laboratoriaNews.news[12].img + '" alt="">');
     const divTextMundo6 = $('<div class="news--detail col-lg-3">');
-    const textMundo6 = $('<p class="news--titleLetter">' + laboratoriaNews.news[12].title + '</p>');
+    const textMundo6 = $('<p class="title news--titleLetter">' + laboratoriaNews.news[12].title + '</p>');
     const letter6 = $('<span class="news--letter">HOY</span>');
     row2.append(itemMundo6);
     itemMundo6.append(imgMundo6);
@@ -490,7 +636,7 @@ const Mundo = () => {
     const itemMundo7 = $('<div class="pd col-lg-3">');
     const imgMundo7 = $('<img class="news news--img__md img-responsive" src="assets/img/' + laboratoriaNews.news[13].img + '" alt="">');
     const divTextMundo7 = $('<div class="news--detail col-lg-3">');
-    const textMundo7 = $('<p>' + laboratoriaNews.news[13].title + '</p>');
+    const textMundo7 = $('<p class="title">' + laboratoriaNews.news[13].title + '</p>');
     row2.append(itemMundo7);
     itemMundo7.append(imgMundo7);
     itemMundo7.append(divTextMundo7);
@@ -603,6 +749,12 @@ const changeColor=(cadena, inicio, fin)=> {
     aux.splice(fin, 0, "</span>");
     return aux.join(" ");
 }
+const boldFont=(cadena, inicio, fin)=> {
+    const aux = cadena.split(" ");
+    aux.splice(inicio, 0, "<strong>");
+    aux.splice(fin, 0, "</strong>");
+    return aux.join(" ");
+}
 
 'use strict';
 
@@ -666,15 +818,23 @@ const Footer=()=> {
 
 const render = (root) => {
     root.empty();
-    root.append(Header());
-    root.append(Principal());
-    root.append(Mundo());
-    root.append(Tecnologia());
-    root.append(Educacion());
-    root.append(Opinion());
-    root.append(Carousel());
-    root.append(Footer());
+    root.append(Header(_ => render(root)));
+    switch (state.currentScreen) {
+        case 'principal':
+            root.append(Principal(_ => render(root)));
+            root.append(Secondary(_ => render(root)));
+            root.append(Mundo(_ => render(root)));
+            root.append(Tecnologia(_ => render(root)));
+            root.append(Educacion(_ => render(root)));
+            root.append(Opinion(_ => render(root)));
+            root.append(Carousel(_ => render(root)));
+            break;
 
+        case 'article':
+            root.append(DetailNews(_ => render(root)));
+            break;
+    }
+    root.append(Footer(_ => render(root)));
 };
 
 const laboratoriaNews = {
@@ -685,31 +845,24 @@ const laboratoriaNews = {
 }
 
 
+const state = {
+    currentScreen: 'principal'
+}
+
 $(_ => {
-
-
-
     getJSON('/api/news/', (err, json) => {
         laboratoriaNews.news = json;
         console.log(laboratoriaNews.news);
         const root = $('.root');
         render(root);
+
+        getJSON('/api/categories/', (err, json) => {
+            laboratoriaNews.category = json;
+            console.log(laboratoriaNews.category);
+        });
     });
 
-    getJSON('/api/categories/', (err, json) => {
-        laboratoriaNews.category = json;
-        console.log(laboratoriaNews.category);
-    });
 
-    getJSON('/api/categories/' + laboratoriaNews.idCategory, (err, json) => {
-        laboratoriaNews.idCategory = json;
-        //console.log(laboratoriaNews.idCategories);
-    });
-
-    getJSON('/api/news/' + laboratoriaNews.idNew, (err, json) => {
-        laboratoriaNews.idNew = json;
-        //  console.log(laboratoriaNews.idNew);
-    });
 
 });
 

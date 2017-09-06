@@ -14,7 +14,7 @@ const Educacion = () => {
     const itemEducacion = $('<div class="pd col-lg-6  col-md-6 col-sm-12 col-xs-12 ">');
     const imgEducacion = $('<img class="news news--img__md  img-responsive" src="assets/img/' + laboratoriaNews.news[19].img + '" alt="">');
     const divTextEducacion = $('<div class="news--detail col-lg-6  col-md-6 col-sm-12 col-xs-12">');
-    const textEducacion = $('<p>' + changeColor(laboratoriaNews.news[19].title, 0, 2) + '</p>');
+    const textEducacion = $('<p class="title">' + changeColor(laboratoriaNews.news[19].title, 0, 2) + '</p>');
     col1.append(rowSubItem1);
     rowSubItem1.append(itemEducacion);
     itemEducacion.append(imgEducacion);
@@ -25,7 +25,7 @@ const Educacion = () => {
     const imgPlay = $('<img class="hidden-xs news--play news--play__md" src="assets/img/play-button.png" alt="">');
     const imgEducacion1 = $('<img class="news news--img__md  img-responsive" src="assets/img/' + laboratoriaNews.news[20].img + '" alt="">');
     const divTextEducacion1 = $('<div class="news--detail col-lg-6  col-md-6 col-sm-12 col-xs-12">');
-    const textEducacion1 = $('<p>' + changeColor(laboratoriaNews.news[20].title, 0, 2) + '</p>');
+    const textEducacion1 = $('<p class="title">' + changeColor(laboratoriaNews.news[20].title, 0, 2) + '</p>');
     rowSubItem1.append(itemEducacion1);
     itemEducacion1.append(imgEducacion1);
     itemEducacion1.append(imgPlay);
@@ -36,7 +36,7 @@ const Educacion = () => {
     const itemEducacion2 = $('<div class="pd col-lg-12  col-md-12  col-sm-12 col-xs-12">');
     const imgEducacion2 = $('<img class="news news--img__sm img-responsive img--sm" src="assets/img/' + laboratoriaNews.news[23].img + '" alt="">');
     const divTextEducacion2 = $('<div class="news--detail news--detail__sm detail--sm col-lg-6  col-md-6 col-sm-12 col-xs-12">');
-    const textEducacion2 = $('  <p class="titleLetter--sm">' + laboratoriaNews.news[23].title + ' newspaper</p>');
+    const textEducacion2 = $('  <p class="titleLetter--sm title">' + laboratoriaNews.news[23].title + ' newspaper</p>');
     const letter2 = $('<span class="hidden-lg news--letter letter--sm">HOY</span>');
     col1.append(rowSubItem2);
     rowSubItem2.append(itemEducacion2);
@@ -53,7 +53,7 @@ const Educacion = () => {
     const itemEducacion3 = $('<div class="pd col-lg-6  col-md-6 col-sm-12 col-xs-12 ">');
     const imgEducacion3 = $('<img class="news news--img__md  img-responsive img--sm" src="assets/img/' + laboratoriaNews.news[21].img + '" alt="">');
     const divTextEducacion3 = $('<div class="news--detail detail--sm col-lg-6  col-md-6 col-sm-12 col-xs-12">');
-    const textEducacion3 = $('  <p class="titleLetter--sm">' + laboratoriaNews.news[21].title + '</p>');
+    const textEducacion3 = $('  <p class="title titleLetter--sm">' + laboratoriaNews.news[21].title + '</p>');
     const letter3 = $('<span class="hidden-lg news--letter letter--sm">HOY</span>');
     col2.append(rowSubItem3);
     rowSubItem3.append(itemEducacion3);
@@ -65,7 +65,7 @@ const Educacion = () => {
     const itemEducacion4 = $('<div class="pd col-lg-6  col-md-6 col-sm-12 col-xs-12 hidden-xs ">');
     const imgEducacion4 = $('<img class="news news--img__md  img-responsive" src="assets/img/' + laboratoriaNews.news[22].img + '" alt="">');
     const divTextEducacion4 = $('<div class="news--detail col-lg-6  col-md-6 col-sm-12 col-xs-12">');
-    const textEducacion4 = $('<p class="news--titleLetter">' + laboratoriaNews.news[22].title + '</p>');
+    const textEducacion4 = $('<p class="title news--titleLetter">' + laboratoriaNews.news[22].title + '</p>');
     const letter4 = $('<span class="news--letter">HOY</span>');
     rowSubItem3.append(itemEducacion4);
     itemEducacion4.append(imgEducacion4);
@@ -77,7 +77,7 @@ const Educacion = () => {
     const itemEducacion5 = $('<div class="pd col-lg-12  col-md-12  col-sm-12 col-xs-12">');
     const imgEducacion5 = $('<img class="news news--img__sm img--sm img-responsive" src="assets/img/' + laboratoriaNews.news[24].img + '" alt="">');
     const divTextEducacion5 = $('<div class="news--detail news--detail__sm detail--sm col-lg-6  col-md-6 col-sm-12 col-xs-12">');
-    const textEducacion5 = $('  <p class="titleLetter--sm">' + changeColor(laboratoriaNews.news[24].title, 0, 2) + ' newspaper</p>');
+    const textEducacion5 = $('  <p class="title titleLetter--sm">' + changeColor(laboratoriaNews.news[24].title, 0, 2) + ' newspaper</p>');
     const letter5 = $('<span class="hidden-lg news--letter letter--sm">HOY</span>');
     col2.append(rowSubItem4);
     rowSubItem4.append(itemEducacion5);

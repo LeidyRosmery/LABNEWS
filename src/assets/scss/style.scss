@@ -20,6 +20,17 @@ $separator-row: 1.5vh;
     padding: 0 1vh $separator-row;
 }
 
+.title {}
+
+.title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.pdx1 {
+    padding-bottom: 0.5em;
+}
+
 .pdx2 {
     padding-bottom: 2.5em;
 }
@@ -84,7 +95,7 @@ $separator-row: 1.5vh;
         position: absolute;
 
         &__sm {
-            bottom: 30em;
+            bottom: 27em;
             left: 38em;
         }
 
@@ -185,7 +196,7 @@ $separator-row: 1.5vh;
 
         &--sm {
             right: 4.5em;
-            top: 4.8em;
+            top: 3.8em;
         }
     }
 
@@ -227,5 +238,31 @@ $separator-row: 1.5vh;
 
     .title-news {
         font-size: 17px;
+    }
+}
+
+.detailArticle {
+    @extend .news--detail;
+    background: $accent-color;
+    color: $base-color;
+    font-size: 1em;
+}
+
+.perfil {
+    border: 2px solid $brand-color;
+    border-radius: 50%;
+    padding: 0.2em;
+}
+
+.imgArticle {
+    @extend .news--img__sm;
+    height: 12vh;
+}
+
+.article {
+    &--borde {
+        padding: 0.05em 32em;
+        background:$brand-color;
+        margin: 1em 0.4em 0;
     }
 }
