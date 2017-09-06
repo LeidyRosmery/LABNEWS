@@ -47,11 +47,7 @@ __***Tecnologia***__
 
 __***Mundo y Tecnologia - responsive***__
 - En la **version responsive**, desaparece el navbar y se convierte en un menu hamburguesa. El logo pasa a la parte superior izquierda. La noticia principal y secundarias pasan a formar otra estructura.
-![header-mobil](vistas/header-mobil.png) | ![secondary-mobil](vistas/secondary-mobil.png)
-- En la **version responsive**, desaparece el navbar y se convierte en un menu hamburguesa. El logo pasa a la parte superior izquierda. La noticia principal y secundarias pasan a formar otra estructura.
-![header-mobil](vistas/mundo-mobil.png) | ![secondary-mobil](vistas/tecnologia-mobil.png)
-- Las secciones Mundo y Tecnologia en version responsive.
-![mundo-mobil](vistas/header-mobil.png) | ![tecnologia-mobil](vistas/secondary-mobil.png)
+![mundo-mobil](vistas/mundo-mobil.png) | ![tecnologia-mobil](vistas/tecnologia-mobil.png)
 
 __***Educacion***__
 - La seccion Educacion forma otra estructura en la version desktop.
@@ -62,8 +58,8 @@ __***Opinion***__
 ![Opinion](vistas/opinion.png)
 
 __***Educacion y Opinion - responsive***__
-- La seccion Opinion forma otra estructura en la version desktop.
-![Educacion-mobil](vistas/educacion-mobil.png) | ![opinion-mobil](vistas/opinion-mobil.png)
+- En la **version responsive**, desaparece algunos item y otros llegan a formar una estructura diferente.
+![educacion-mobil](vistas/educacion-mobil.png) | ![opinion-mobil](vistas/opinion-mobil.png)
 
 __***Carrusel***__
 - La seccion Carrusel esta formado por 6 item y en la version responsive no aparece.
