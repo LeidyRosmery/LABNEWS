@@ -35,8 +35,11 @@ Somos un grupo conformado por gente comprometida y talentosa. Nuestra mision es 
 ## Responsive
 ### Inicio
 - Cuenta con una barra superior, el logo, el navbar y una noticia principal
-![Wanderlust Demo Part I]((vistas/educacion.png))
-![texto cualquiera por si no carga la imagen]((vistas/footer.png))
+![header-desktop](vistas/nav.png)
+- Existen 3 noticias secundarias
+![secondary-desktop](vistas/secondary.png)
+- En la **version responsive**, desaparece el navbar y se convierte en un menu hamburguesa. El logo pasa a la parte superior izquierda. La noticia principal y secundarias pasan a formar otra estructura.
+![header-mobil](vistas/header-mobil.png) | ![secondary-mobil](vistas/secondary-mobil.png)
 ### Footer
 - Cuenta con 3 columnas y un boton a la derecha que te dirige al principio de la pagina.
-![footer](vistas/mundo.png)
+![footer](vistas/mundo.png) |
