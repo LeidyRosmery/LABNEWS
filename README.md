@@ -29,14 +29,14 @@ Somos un grupo conformado por gente comprometida y talentosa. Nuestra mision es 
 - **Mobil** :Puedes verlo haciendo click [aquí](https://drive.google.com/file/d/0B6QwL6rGulDta2M5Vk1vOE1wTmM/view?usp=sharing).
 
 2. Articulo LabNews:
-- **Desktop** :Puedes verlo haciendo click [aquí](https://github.com/LeidyRosmery/LABNEWS/vistas/carrusel.png).
-- **Mobil** :Puedes verlo haciendo click [aquí](vistas/educacion.png).
+- **Desktop** :Puedes verlo haciendo click [aquí](https://drive.google.com/file/d/0B6QwL6rGulDtdWRpMXB0S0JrUUk/view?usp=sharing).
+- **Mobil** :Puedes verlo haciendo click [aquí](https://drive.google.com/file/d/0B6QwL6rGulDtX2pjV1loRW9KbTg/view?usp=sharing).
 
 ## Responsive
 ### Inicio
 - Cuenta con una barra superior, el logo, el navbar y una noticia principal
-![Wanderlust Demo Part I](https://s-media-cache-ak0.pinimg.com/originals/8b/9a/09/8b9a0915b49c610a7927a283044402df.gif)
-![texto cualquiera por si no carga la imagen](https://lh6.googleusercontent.com/xqArxdrUjaCBipz5-HF5tDrrzar9Z41jvdvuuF_V0n1NSXIDBHVdx9FvaEPCBxQmyrjXxHsofqd8A0c=w1366-h613)
+![Wanderlust Demo Part I]((vistas/educacion.png))
+![texto cualquiera por si no carga la imagen]((vistas/footer.png))
 ### Footer
 - Cuenta con 3 columnas y un boton a la derecha que te dirige al principio de la pagina.
-![footer](https://drive.google.com/file/d/0B3NtnB2-3W5PaXp6NlYyNjQwNGs)
+![footer](vistas/mundo.png)
